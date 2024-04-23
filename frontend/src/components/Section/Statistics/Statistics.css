@@ -1,0 +1,26 @@
+/* Statistics.css */
+.statistics-section {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+    align-items: center;
+    padding: 20px 0; /* Adjust padding as needed */
+  }
+  
+  .statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .statistic-number {
+    color: #0000ff; /* Replace with the actual color from the design */
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+  }
+  
+  .statistic-description {
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  /* Add any additional global or specific styles as needed */
+  

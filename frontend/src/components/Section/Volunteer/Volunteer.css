@@ -1,0 +1,72 @@
+.volunteerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .volunteerHeader {
+    margin-bottom: 30px;
+  }
+  
+  .volunteerTitle {
+    margin-bottom: 20px;
+    font-size: 2em; /* Example size */
+  }
+  
+  .volunteerSubtitle {
+    margin-bottom: 20px;
+    font-size: 1em; /* Example size */
+  }
+  
+  .volunteerList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+    width: 100%;
+  }
+  
+  .volunteerItem {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
+  }
+  
+  .imageWrapper {
+    flex-shrink: 0;
+    width: 120px; /* Example size */
+    height: 120px; /* Example size */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .volunteerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .volunteerContent {
+    flex-grow: 1;
+  }
+  
+  .startButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3; /* Example color */
+    color: white;
+    font-size: 1em; /* Example size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .startButton:hover {
+    background-color: #003d82; /* Darker blue on hover */
+  }
+  
