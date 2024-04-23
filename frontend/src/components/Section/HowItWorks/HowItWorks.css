@@ -1,0 +1,49 @@
+.howItWorksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+  }
+  
+  .howItWorksImageWrapper {
+    flex-basis: 40%;
+  }
+  
+  .howItWorksImage {
+    width: 100%;
+    border-radius: 15px; /* Adjust to match the image's border-radius */
+  }
+  
+  .howItWorksContent {
+    flex-basis: 60%;
+    text-align: left;
+  }
+  
+  .howItWorksTitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .howItWorksSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .howItWorksStep {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .stepNumber {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    min-width: 20px;
+  }
+  
+  .stepDescription {
+    font-size: 1rem;
+  }
+  

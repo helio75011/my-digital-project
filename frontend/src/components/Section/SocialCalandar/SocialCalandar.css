@@ -1,0 +1,93 @@
+.socialCalendarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .socialCalendarHeader h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .socialCalendarHeader p {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2rem;
+  }
+  
+  .locationFilter {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .locationFilter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-right: -1px; /* Align with the button */
+  }
+  
+  .locationFilter button {
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .eventsContainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .eventCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .eventImage {
+    width: 100%;
+    display: block;
+  }
+  
+  .eventDetails {
+    padding: 10px;
+  }
+  
+  .eventDate,
+  .eventLocation,
+  .eventAvailability {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 5px;
+  }
+  
+  .eventTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .eventDescription {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .navigationButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .prevButton,
+  .nextButton {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  

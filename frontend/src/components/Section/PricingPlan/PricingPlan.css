@@ -1,0 +1,75 @@
+.pricingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .pricingHeader {
+    text-align: center;
+  }
+  
+  .pricingHeader h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricingHeader p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .plan {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .planHeader h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .planPrice {
+    font-size: 2rem;
+    color: #e8554e;
+    font-weight: bold;
+  }
+  
+  .planDetails {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .planDetails li {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .chooseButton {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .chooseButton:hover {
+    background-color: #003d82;
+  }
+  

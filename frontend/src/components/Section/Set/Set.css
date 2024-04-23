@@ -1,0 +1,52 @@
+/* Set.css */
+.support-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Replace with the actual background color */
+    padding: 50px; /* Adjust padding as needed */
+  }
+  
+  .support-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .support-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .support-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 48px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .support-title {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+  }
+  
+  .support-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 30px;
+  }
+  
+  .start-button {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px; /* Adjust the font size as needed */
+    cursor: pointer;
+    border-radius: 5px; /* Adjust as needed for the design */
+    text-transform: uppercase; /* Example text style */
+  }
+  
+  /* Responsive design adjustments can be made as needed */
+  

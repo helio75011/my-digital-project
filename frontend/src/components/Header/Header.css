@@ -1,0 +1,47 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff; /* Assuming a white background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* For a subtle shadow */
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    font-size: 24px;
+    /* Add additional styles for the logo */
+  }
+  
+  .nav-links a,
+  .nav-actions a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333333; /* A darker text color for better readability */
+    /* Add additional styles for the links */
+  }
+  
+  .nav-actions .sign-in {
+    background: none;
+    border: none;
+    /* Styles for the 'Sign In' text link */
+  }
+  
+  .nav-actions .start {
+    background-color: #007bff; /* Example blue background */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Additional styles for the 'Start' button */
+  }
+  
+  /* Add responsive design or other specific styles as needed */
+  

@@ -1,0 +1,58 @@
+.faqContainer {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .faqImageWrapper {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .faqImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .faqContent {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .faqContent h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .faqList {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faqItem {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .faqToggle {
+    font-size: 1.5rem;
+  }
+  
+  .faqAnswer {
+    padding-top: 10px;
+  }
+  

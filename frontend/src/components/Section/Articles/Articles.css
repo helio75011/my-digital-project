@@ -1,0 +1,85 @@
+.articlesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .articlesHeader h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .articlesHeader p {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2rem;
+  }
+  
+  .articlesContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .discoverBlock {
+    flex-basis: 30%;
+    padding: 20px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .articlesList {
+    display: flex;
+    flex-basis: 70%;
+    gap: 20px;
+  }
+  
+  .articleItem {
+    flex-basis: calc(33.333% - 20px); /* adjust for 3 items with gap */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .articleImage {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .articleTag {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .articleTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .articleAuthor,
+  .articleDate {
+    font-size: 0.9rem;
+    color: grey;
+  }
+  
+  .navigationButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .prevButton,
+  .nextButton {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
