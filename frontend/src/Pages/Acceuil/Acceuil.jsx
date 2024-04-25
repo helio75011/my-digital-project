@@ -1,4 +1,5 @@
 import React from 'react'
+import './Acceuil.css'
 import Header from '../../components/Header/Header'
 import Set from '../../components/Section/Set/Set'
 import Statistics from '../../components/Section/Statistics/Statistics'
@@ -14,7 +15,7 @@ import Contact from '../../components/Section/Contact/Contact'
 import Footer from '../../components/Section/Footer/Footer'
 const Acceuil = () => {
   return (
-    <div>
+    <div className='body-landing'>
         <Header />
         <Set />
         <Statistics />
