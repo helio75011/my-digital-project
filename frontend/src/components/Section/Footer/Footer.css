@@ -1,0 +1,58 @@
+.footerContainer {
+    background-color: #333a56; /* Adjust the color to match your theme */
+    color: #ffffff;
+    padding: 40px 80px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .aboutSection, .linksSection, .socialMediaSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutSection h4, .linksSection h4, .socialMediaSection h4 {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  .aboutSection p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .linksSection a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .linksSection a:hover {
+    text-decoration: underline;
+  }
+  
+  .socialMediaSection {
+    align-items: end;
+  }
+  
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .socialIcons svg {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    fill: currentColor;
+  }
+  
+  .socialIcons svg:hover {
+    fill: #1da1f2; /* Or any other hover color */
+  }
+  

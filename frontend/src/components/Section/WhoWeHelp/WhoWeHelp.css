@@ -1,0 +1,42 @@
+/* WhoWeHelp.css */
+.who-we-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px; /* Adjust padding to fit your design */
+    background-color: #fff; /* Replace with actual color if necessary */
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .intro,
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .start-button {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust font size as needed */
+    cursor: pointer;
+    border-radius: 5px; /* Adjust as needed for design */
+    text-transform: uppercase; /* Example text style */
+  }
+  
+  .image-wrapper {
+    max-width: 40%;
+    /* Add any additional styling for the image wrapper */
+  }
+  
+  .person-image {
+    width: 100%;
+    height: auto;
+    /* Adjust size as needed, possibly using object-fit for aspect ratios */
+  }
+  
+  /* Additional responsive or specific styles as needed */
+  
