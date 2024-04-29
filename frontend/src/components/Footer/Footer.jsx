@@ -33,9 +33,6 @@ const Footer = () => {
         <div className="socialMediaSection">
           <h4>Restez connecté</h4>
           <div className="socialIcons">
-            {/* <FacebookIcon />
-            <InstagramIcon />
-            <WhatsappIcon /> */}
           </div>
         </div>
       </div>
