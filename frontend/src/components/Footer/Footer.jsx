@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-// import { ReactComponent as FacebookIcon } from './facebook-icon.svg';
-// import { ReactComponent as InstagramIcon } from './instagram-icon.svg';
-// import { ReactComponent as WhatsappIcon } from './whatsapp-icon.svg';
+import Facebook from './uploads/facebook.png'
+import Instagram from './uploads/instagram.png'
+import Watsapp from './uploads/watsapp.png'
 
 const Footer = () => {
   return (
@@ -33,6 +33,9 @@ const Footer = () => {
         <div className="socialMediaSection">
           <h4>Restez connecté</h4>
           <div className="socialIcons">
+            <img src={Facebook} />
+            <img src={Instagram} />
+            <img src={Watsapp} />
           </div>
         </div>
       </div>
