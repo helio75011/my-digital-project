@@ -4,11 +4,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px; /* Adjust padding to fit your design */
-    background-color: #fff; /* Replace with actual color if necessary */
+    background-color: #F8F4F2; /* Replace with actual color if necessary */
   }
   
   .content {
     max-width: 50%;
+  }
+
+  .title-wwh {
+    text-align: center;
   }
   
   .intro,
@@ -16,8 +20,8 @@
     margin-bottom: 20px;
   }
   
-  .start-button {
-    background-color: #007bff; /* Example button color */
+  .start-button2 {
+    background-color: #636C8F; /* Example button color */
     color: white;
     border: none;
     padding: 10px 20px;

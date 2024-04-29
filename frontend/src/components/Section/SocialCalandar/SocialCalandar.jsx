@@ -1,5 +1,8 @@
 import React from 'react';
 import './SocialCalandar.css';
+import Logo from './uploads/logo.png'
+import ImgCS1 from './uploads/ImgCS1.png'
+import ImgCS2 from './uploads/ImgCS2.png'
 
 const SocialCalendar = () => {
   return (
@@ -16,43 +19,63 @@ const SocialCalendar = () => {
       <div className="eventsContainer">
         {/* Repeat this block for each event */}
         <div className="eventCard">
-          <img src="path_to_event_image.jpg" alt="Event" className="eventImage" />
+          <img src={ImgCS1} alt="Event" className="eventImage" />
           <div className="eventDetails">
-            <p className="eventDate">05 avril 2024 à 18h30</p>
+            <div className='dateCS'>
+              <p className="eventDate">05 avril 2024 à 18h30</p>
+              <img src={Logo} />
+            </div>
             <h3 className="eventTitle">ART Therapie</h3>
             <p className="eventDescription">Lorem ipsum dolor sit amet consectetur...</p>
-            <p className="eventLocation">Paris 01</p>
-            <p className="eventAvailability">9 places disponible</p>
+            <div className='date2CS'>
+              <p className="eventLocation">Paris 01</p>
+              <p className="eventAvailability">9 places disponible</p>
+            </div>
           </div>
         </div>
         <div className="eventCard">
-          <img src="path_to_event_image.jpg" alt="Event" className="eventImage" />
+          <img src={ImgCS2} alt="Event" className="eventImage" />
           <div className="eventDetails">
-            <p className="eventDate">05 avril 2024 à 18h30</p>
+            <div className='dateCS'>
+              <p className="eventDate">05 avril 2024 à 18h30</p>
+              <img src={Logo} />
+            </div>
             <h3 className="eventTitle">ART Therapie</h3>
             <p className="eventDescription">Lorem ipsum dolor sit amet consectetur...</p>
-            <p className="eventLocation">Paris 01</p>
-            <p className="eventAvailability">9 places disponible</p>
+            <div className='date2CS'>
+              <p className="eventLocation">Paris 01</p>
+              <p className="eventAvailability">9 places disponible</p>
+            </div>
           </div>
         </div>
         <div className="eventCard">
-          <img src="path_to_event_image.jpg" alt="Event" className="eventImage" />
+          <img src={ImgCS1} alt="Event" className="eventImage" />
           <div className="eventDetails">
-            <p className="eventDate">05 avril 2024 à 18h30</p>
+            <div className='dateCS'>
+              <p className="eventDate">05 avril 2024 à 18h30</p>
+              <img src={Logo} />
+            </div>
             <h3 className="eventTitle">ART Therapie</h3>
             <p className="eventDescription">Lorem ipsum dolor sit amet consectetur...</p>
-            <p className="eventLocation">Paris 01</p>
-            <p className="eventAvailability">9 places disponible</p>
+            <div className='date2CS'>
+              <p className="eventLocation">Paris 01</p>
+              <p className="eventAvailability">9 places disponible</p>
+            </div>
           </div>
         </div>
         <div className="eventCard">
-          <img src="path_to_event_image.jpg" alt="Event" className="eventImage" />
+          <img src={ImgCS2} alt="Event" className="eventImage" />
           <div className="eventDetails">
-            <p className="eventDate">05 avril 2024 à 18h30</p>
+            <div className='dateCS'>
+              <p className="eventDate">05 avril 2024 à 18h30</p>
+              <img src={Logo} />
+            </div>
             <h3 className="eventTitle">ART Therapie</h3>
             <p className="eventDescription">Lorem ipsum dolor sit amet consectetur...</p>
-            <p className="eventLocation">Paris 01</p>
-            <p className="eventAvailability">9 places disponible</p>
+            <div className='date2CS'>
+              <p className="eventLocation">Paris 01</p>
+              <p className="eventAvailability">9 places disponible</p>
+            </div>
           </div>
         </div>
         {/* ...other events */}

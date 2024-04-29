@@ -39,12 +39,23 @@
   .planHeader h3 {
     font-size: 1.2rem;
     color: #333;
+    text-align: center;
+  }
+
+  .planHeader h4 {
+    text-align: center;
+  }
+
+  .detailP {
+    display: flex;
   }
   
   .planPrice {
     font-size: 2rem;
     color: #e8554e;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
   }
   
   .planDetails {
@@ -59,7 +70,7 @@
   }
   
   .chooseButton {
-    background-color: #0056b3;
+    background-color: #636C8F;
     color: white;
     border: none;
     border-radius: 5px;
