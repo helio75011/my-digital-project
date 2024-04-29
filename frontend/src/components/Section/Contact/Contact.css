@@ -23,7 +23,9 @@
   
   .contactWarning {
     font-size: 0.8rem;
-    color: #ff0000;
+    /* color: #ff0000; */
+    text-align: center;
+    margin-bottom: 50px;
   }
   
   .contactFormWrapper {
@@ -43,6 +45,10 @@
   
   .contactForm h2 {
     margin-bottom: 30px;
+  }
+
+  .contactForm .NFAQ  {
+    text-align: end;
   }
   
   .contactForm form {
@@ -65,7 +71,7 @@
   
   .contactForm button {
     padding: 10px 20px;
-    background-color: #0056b3;
+    background-color: #636C8F;
     color: white;
     border: none;
     border-radius: 5px;
@@ -73,6 +79,6 @@
   }
   
   .contactForm button:hover {
-    background-color: #003d82;
+    background-color: #636C8F;
   }
   

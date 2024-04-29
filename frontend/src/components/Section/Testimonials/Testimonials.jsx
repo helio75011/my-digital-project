@@ -1,5 +1,6 @@
 import React from 'react';
 import './Testimonials.css';
+import Logo from './uploads/logo.png'
 
 const Testimonials = () => {
   return (
@@ -10,7 +11,7 @@ const Testimonials = () => {
         <div className="testimonial">
           <p className="testimonialText">Lorem ipsum dolor sit amet consectetur. Condimetum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor gestas pellentesque eu maecenas. Risus lectus nisl.</p>
           <div className="testimonialAuthor">
-            <img src="path_to_author_image.jpg" alt="Jacqueline Wright" className="authorImage" />
+            <img src={Logo} alt="Jacqueline Wright" className="authorImage" />
             <div>
               <strong>Jacqueline Wright</strong>
               <p>Participant</p>
@@ -20,7 +21,7 @@ const Testimonials = () => {
         <div className="testimonial">
           <p className="testimonialText">Lorem ipsum dolor sit amet consectetur. Condimetum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor gestas pellentesque eu maecenas. Risus lectus nisl.</p>
           <div className="testimonialAuthor">
-            <img src="path_to_author_image.jpg" alt="Jacqueline Wright" className="authorImage" />
+            <img src={Logo} alt="Jacqueline Wright" className="authorImage" />
             <div>
               <strong>Jacqueline Wright</strong>
               <p>Participant</p>

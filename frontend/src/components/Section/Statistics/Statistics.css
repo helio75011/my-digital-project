@@ -9,17 +9,21 @@
   .statistic {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
   
   .statistic-number {
-    color: #0000ff; /* Replace with the actual color from the design */
+    color: #636C8F; /* Replace with the actual color from the design */
     font-size: 3rem; /* Adjust font size as needed */
     font-weight: bold;
   }
   
   .statistic-description {
     font-size: 1.5rem; /* Adjust font size as needed */
+  }
+
+  .statistic-parent {
+    display: flex;
   }
   
   /* Add any additional global or specific styles as needed */

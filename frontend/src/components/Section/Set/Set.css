@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* Replace with the actual background color */
+    background-color: #F8F4F2; /* Replace with the actual background color */
     padding: 50px; /* Adjust padding as needed */
   }
   
@@ -38,7 +38,7 @@
   }
   
   .start-button {
-    background-color: #007bff; /* Example button color */
+    background-color: #636C8F; /* Example button color */
     color: white;
     border: none;
     padding: 15px 30px;

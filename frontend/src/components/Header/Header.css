@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #ffffff; /* Assuming a white background */
+    background: #F8F4F2; /* Assuming a white background */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* For a subtle shadow */
   }
   
@@ -35,8 +35,17 @@
   }
   
   .nav-actions .start {
-    background-color: #007bff; /* Example blue background */
+    background-color: #636C8F; /* Example blue background */
     color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Additional styles for the 'Start' button */
+  }
+
+  .nav-actions .sign-in {
+    background-color: #fff; /* Example blue background */
+    color: #000;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
