@@ -20,6 +20,10 @@
     margin-bottom: 20px;
     font-size: 1em; /* Example size */
   }
+
+  .volunteerList-parent {
+    display: flex;
+  }
   
   .volunteerList {
     list-style: none;
@@ -37,10 +41,6 @@
   }
   
   .imageWrapper {
-    flex-shrink: 0;
-    width: 120px; /* Example size */
-    height: 120px; /* Example size */
-    border-radius: 50%;
     overflow: hidden;
   }
   
@@ -52,6 +52,7 @@
   
   .volunteerContent {
     flex-grow: 1;
+    display: flex;
   }
   
   .startButton {
@@ -59,7 +60,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #0056b3; /* Example color */
+    background-color: #636C8F; /* Example color */
     color: white;
     font-size: 1em; /* Example size */
     cursor: pointer;

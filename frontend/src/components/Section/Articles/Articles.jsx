@@ -1,11 +1,16 @@
 import React from 'react';
 import './Articles.css';
+import Logo from './uploads/logo.png'
+import ImageSM1 from './uploads/ImageSM1.png'
+import ImageSM2 from './uploads/ImageSM2.png'
+import ImageSM3 from './uploads/ImageSM3.png'
+import Titre from './uploads/titre.png'
 
 const Articles = () => {
   return (
     <div className="articlesContainer">
       <div className="articlesHeader">
-        <h2>Articles et Conseils sur la santé mentale</h2>
+        <img src={Titre} />
         <p>Explorez des Ressources Expertes pour Cultiver l'Équilibre et la Santé Mentale</p>
       </div>
       
@@ -18,25 +23,34 @@ const Articles = () => {
         <div className="articlesList">
           {/* Repeat this block for each article */}
           <div className="articleItem">
-            <img src="path_to_article_image.jpg" alt="Article thumbnail" className="articleImage" />
+            <img src={ImageSM1} alt="Article thumbnail" className="articleImage" />
             <span className="articleTag">Isolement social</span>
             <h4 className="articleTitle">10 Stratégies Simples pour Gérer l'Anxiété au Quotidien</h4>
             <p className="articleAuthor">Merlie-Claire Gustav</p>
-            <p className="articleDate">2 avril 2024</p>
+            <div className='logo-article'>
+              <img src={Logo} />
+              <p className="articleDate">2 avril 2024</p>
+            </div>
           </div>
           <div className="articleItem">
-            <img src="path_to_article_image.jpg" alt="Article thumbnail" className="articleImage" />
+            <img src={ImageSM2} alt="Article thumbnail" className="articleImage" />
             <span className="articleTag">Isolement social</span>
             <h4 className="articleTitle">10 Stratégies Simples pour Gérer l'Anxiété au Quotidien</h4>
             <p className="articleAuthor">Merlie-Claire Gustav</p>
-            <p className="articleDate">2 avril 2024</p>
+            <div className='logo-article'>
+              <img src={Logo} />
+              <p className="articleDate">2 avril 2024</p>
+            </div>
           </div>
           <div className="articleItem">
-            <img src="path_to_article_image.jpg" alt="Article thumbnail" className="articleImage" />
+            <img src={ImageSM3} alt="Article thumbnail" className="articleImage" />
             <span className="articleTag">Isolement social</span>
             <h4 className="articleTitle">10 Stratégies Simples pour Gérer l'Anxiété au Quotidien</h4>
             <p className="articleAuthor">Merlie-Claire Gustav</p>
-            <p className="articleDate">2 avril 2024</p>
+            <div className='logo-article'>
+              <img src={Logo} />
+              <p className="articleDate">2 avril 2024</p>
+            </div>
           </div>
           {/* ...other articles */}
         </div>

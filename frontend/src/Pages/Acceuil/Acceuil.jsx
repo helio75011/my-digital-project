@@ -12,7 +12,7 @@ import PricingPlan from '../../components/Section/PricingPlan/PricingPlan'
 import Testimonials from '../../components/Section/Testimonials/Testimonials'
 import FAQ from '../../components/Section/FAQ/FAQ'
 import Contact from '../../components/Section/Contact/Contact'
-import Footer from '../../components/Section/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 const Acceuil = () => {
   return (
     <div className='body-landing'>

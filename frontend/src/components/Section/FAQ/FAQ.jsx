@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import FAQP from './uploads/FAQP.png';
 
 const FAQ = () => {
   // State to track the open question
@@ -16,7 +17,7 @@ const FAQ = () => {
   return (
     <div className="faqContainer">
       <div className="faqImageWrapper">
-        <img src="path_to_image.jpg" alt="FAQ Visual" className="faqImage" />
+        <img src={FAQP} alt="FAQ Visual" className="faqImage" />
       </div>
       <div className="faqContent">
         <h2>Questions fréquemment posées</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './PricingPlan.css';
+import Validation from './uploads/validation.png'
 
 const PricingPlan = () => {
   return (
@@ -13,25 +14,44 @@ const PricingPlan = () => {
         <div className="plan basePlan">
           <div className="planHeader">
             <h3>Plan de base</h3>
+            <h4>soutien suplémentaire</h4>
             <span className="planPrice">€5/mois</span>
           </div>
-          <ul className="planDetails">
-            <li>accès aux ressources (blog, guides)</li>
-            <li>suivi personnalisé</li>
-          </ul>
+          <div className="planDetails">
+            <h3>Inclus :</h3>
+            <div className='detailP'>
+              <img src={Validation} />
+              <p>accès aux ressources (blog, guides)</p>
+            </div>
+            <div className='detailP'>
+              <img src={Validation} />
+              <p>suivi personnalisé</p>
+            </div>
+          </div>
           <button className="chooseButton">Choisir</button>
         </div>
 
         <div className="plan premiumPlan">
           <div className="planHeader">
             <h3>Plan premium</h3>
+            <h4>soutien complet</h4>
             <span className="planPrice">€10/mois</span>
           </div>
-          <ul className="planDetails">
-            <li>accès aux ressources (blog, guides)</li>
-            <li>suivi personnalisé</li>
-            <li>consultation individuelle</li>
-          </ul>
+          <div className="planDetails">
+            <h3>Inclus :</h3>
+            <div className='detailP'>
+              <img src={Validation} />
+              <p>accès aux ressources (blog, guides)</p>
+            </div>
+            <div className='detailP'>
+              <img src={Validation} />
+              <p>suivi personnalisé</p>
+            </div>
+            <div className='detailP'>
+              <img src={Validation} />
+              <p>consultation individuelle</p>
+            </div>
+          </div>
           <button className="chooseButton">Choisir</button>
         </div>
       </div>
