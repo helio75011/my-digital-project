@@ -23,6 +23,7 @@
 
   .volunteerList-parent {
     display: flex;
+    flex-wrap: wrap;
   }
   
   .volunteerList {
@@ -53,6 +54,7 @@
   .volunteerContent {
     flex-grow: 1;
     display: flex;
+    align-items: center;
   }
   
   .startButton {

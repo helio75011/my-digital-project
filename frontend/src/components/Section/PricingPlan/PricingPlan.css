@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #F8F4F2;
   }
   
   .pricingHeader {
@@ -24,6 +24,7 @@
   .plans {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
   }
   

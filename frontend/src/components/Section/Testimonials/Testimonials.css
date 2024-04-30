@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #F8F4F2;
   }
   
   .testimonialsContainer h2 {
@@ -14,6 +14,7 @@
   .testimonialsContent {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
   }
@@ -23,13 +24,14 @@
     background: none;
     font-size: 1.5rem;
     cursor: pointer;
+    border: 0.5px solid black;
   }
   
   .testimonial {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     max-width: 600px;
     width: 100%;
   }

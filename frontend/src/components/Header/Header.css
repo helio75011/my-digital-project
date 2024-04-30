@@ -5,7 +5,7 @@
     align-items: center;
     padding: 10px 20px;
     background: #F8F4F2; /* Assuming a white background */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* For a subtle shadow */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); For a subtle shadow */
   }
   
   .navbar {
@@ -53,4 +53,91 @@
   }
   
   /* Add responsive design or other specific styles as needed */
+  
+  .header {
+    position: relative;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    display: none; /* Cache le menu burger sur desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Pleine largeur en mobile */
+  }
+  
+  .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* Styles spécifiques pour mobile */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Affiche le menu burger sur mobile */
+    }
+  
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      background-color: white;
+      transition: left 0.3s;
+      z-index: 1000;
+    }
+  
+    .sidebar.open {
+      left: 0; /* Fait apparaître la sidebar */
+    }
+  }
+  
+  /* Styles spécifiques pour desktop */
+  @media (min-width: 769px) {
+    .navbar {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  
+    .sidebar {
+      flex-direction: row;
+      align-items: center;
+      position: static;
+      background-color: transparent; /* Supprime le fond pour le mode desktop */
+      height: auto;
+      width: auto;
+      left: auto;
+      transition: none;
+    }
+  
+    .sidebar a {
+      padding: 0 10px; /* Espacement horizontal entre les liens */
+    }
+  
+    .nav-actions {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .sidebar-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   

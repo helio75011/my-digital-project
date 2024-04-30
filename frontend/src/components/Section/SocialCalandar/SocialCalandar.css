@@ -84,18 +84,27 @@
   
   .navigationButtons {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 10px;
   }
   
   .prevButton,
   .nextButton {
-    border: none;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 8px 10px;
     background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+  .prevButton:hover,
+  .nextButton:hover {
+    background: #636C8F;
+    color: #fff;
+  }
   
   .dateCS, .date2CS {
     display: flex;
+    align-items: center;
   }
