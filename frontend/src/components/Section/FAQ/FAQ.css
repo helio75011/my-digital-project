@@ -1,6 +1,7 @@
 .faqContainer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px;
     gap: 40px;
     background-color: #f9f9f9;

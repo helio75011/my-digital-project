@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around; /* Adjust spacing as needed */
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 0; /* Adjust padding as needed */
   }
   
@@ -24,6 +25,7 @@
 
   .statistic-parent {
     display: flex;
+    flex-wrap: wrap;
   }
   
   /* Add any additional global or specific styles as needed */

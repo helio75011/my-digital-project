@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #F8F4F2; /* Replace with the actual background color */
     padding: 50px; /* Adjust padding as needed */
   }
