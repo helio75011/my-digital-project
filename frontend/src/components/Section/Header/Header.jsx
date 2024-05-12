@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Header.css'; // Only if you're using a separate CSS file
 import Logo from './uploads/Logo.png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +31,8 @@ const Header = () => {
             <a href="/contact"><b>Contact</b></a>
           </div>
           <div className="nav-actions">
-            <a href="/signin" className="sign-in"><b>S'identifier</b></a>
-            <a href="/start" className="start">Commencer</a>
+            <Link to="/login"><b>S'identifier</b></Link>
+            <Link to="/register">Commencer</Link>
           </div>
         </div>
       </nav>
