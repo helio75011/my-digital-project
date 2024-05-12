@@ -1,0 +1,117 @@
+/* src/Questionnaire-component.css */
+.body-questionnaire {
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-questionnaire {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .title-questionnaire {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle-questionnaire {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .step {
+    background: #d3d3d3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .step.active {
+    background: #6c63ff;
+    color: white;
+  }
+  
+  .question-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .question-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .option:hover {
+    background: #f0f0f5;
+  }
+  
+  .option.selected {
+    border-color: #6c63ff;
+    background: #f0f0f5;
+  }
+  
+  .notification-questionnaire {
+    display: flex;
+    align-items: center;
+    background-color: #eef2ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .notification-questionnaire p {
+    margin: 0;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+  }
+  
+  button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #5754d1;
+  }
+  

@@ -1,0 +1,104 @@
+/* src/VolunteerForm-component.css */
+.body-volunteer {
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-volunteer {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .title-volunteer {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group-inline-volunteer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .form-group-volunteer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+  
+  .label-volunteer {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .input-volunteer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .textarea-volunteer {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .checkbox-volunteer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox-volunteer input {
+    margin-right: 0.5rem;
+  }
+  
+  .notification-volunteer {
+    display: flex;
+    align-items: center;
+    background-color: #eef2ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .notification-volunteer p {
+    margin: 0;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+  }
+  
+  .button-volunteer {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .button-volunteer:hover {
+    background-color: #5754d1;
+  }
+  
