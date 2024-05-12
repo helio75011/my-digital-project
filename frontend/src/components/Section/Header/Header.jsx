@@ -31,8 +31,8 @@ const Header = () => {
             <a href="/contact"><b>Contact</b></a>
           </div>
           <div className="nav-actions">
-            <Link to="/login"><b>S'identifier</b></Link>
-            <Link to="/register">Commencer</Link>
+            <Link className='sign-in' to="/login"><b>S'identifier</b></Link>
+            <Link className='start' to="/register">Commencer</Link>
           </div>
         </div>
       </nav>
