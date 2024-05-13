@@ -1,5 +1,5 @@
-/* src/Questionnaire-component.css */
-.body-questionnaire {
+/* src/QuestionnaireForm-component.css */
+.body-questionnaire-form {
     background-color: #f0f0f5;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
   }
   
-  .container-questionnaire {
+  .container-questionnaire-form {
     background: white;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,12 +18,12 @@
     width: 500px;
   }
   
-  .title-questionnaire {
+  .title-questionnaire-form {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  .subtitle-questionnaire {
+  .subtitle-questionnaire-form {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #555;
@@ -66,26 +66,17 @@
     margin-bottom: 1rem;
   }
   
-  .option {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
+  .textarea {
+    width: 100%;
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 100px;
   }
   
-  .option:hover {
-    background: #f0f0f5;
-  }
-  
-  .option.selected {
-    border-color: #6c63ff;
-    background: #f0f0f5;
-  }
-  
-  .notification-questionnaire {
+  .notification-questionnaire-form {
     display: flex;
     align-items: center;
     background-color: #eef2ff;
@@ -94,7 +85,7 @@
     margin-top: 1rem;
   }
   
-  .notification-questionnaire p {
+  .notification-questionnaire-form p {
     margin: 0;
     margin-left: 0.5rem;
     font-size: 0.9rem;
@@ -113,5 +104,4 @@
   
   .button:hover {
     background-color: #5754d1;
-  }
-  
+  }  

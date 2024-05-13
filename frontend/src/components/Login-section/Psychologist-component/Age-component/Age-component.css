@@ -1,5 +1,5 @@
-/* src/Questionnaire-component.css */
-.body-questionnaire {
+/* src/AgeQuestionnaire-component.css */
+.body-age-questionnaire {
     background-color: #f0f0f5;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
   }
   
-  .container-questionnaire {
+  .container-age-questionnaire {
     background: white;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,12 +18,12 @@
     width: 500px;
   }
   
-  .title-questionnaire {
+  .title-age-questionnaire {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  .subtitle-questionnaire {
+  .subtitle-age-questionnaire {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #555;
@@ -66,26 +66,17 @@
     margin-bottom: 1rem;
   }
   
-  .option {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
+  .select {
+    width: 100%;
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    background: #fff;
     cursor: pointer;
-    transition: background 0.3s;
   }
   
-  .option:hover {
-    background: #f0f0f5;
-  }
-  
-  .option.selected {
-    border-color: #6c63ff;
-    background: #f0f0f5;
-  }
-  
-  .notification-questionnaire {
+  .notification-age-questionnaire {
     display: flex;
     align-items: center;
     background-color: #eef2ff;
@@ -94,7 +85,7 @@
     margin-top: 1rem;
   }
   
-  .notification-questionnaire p {
+  .notification-age-questionnaire p {
     margin: 0;
     margin-left: 0.5rem;
     font-size: 0.9rem;
