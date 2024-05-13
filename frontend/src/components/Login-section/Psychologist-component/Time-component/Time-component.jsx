@@ -1,6 +1,7 @@
 // src/Questionnaire.js
 import React, { useState } from 'react';
 import './Time-component.css';
+import { Link } from 'react-router-dom';
 
 const TimeComponent = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -52,7 +53,8 @@ const TimeComponent = () => {
             quelques questions de base.
           </p>
         </div>
-        <button onClick={handleNextStep}>Suivant</button>
+        {/* <button onClick={handleNextStep}>Suivant</button> */}
+        <Link className='button' to='/psycho-two'>Suivant</Link>
       </div>
     </div>
   );

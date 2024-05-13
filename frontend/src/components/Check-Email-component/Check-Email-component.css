@@ -1,0 +1,95 @@
+/* src/EmailVerification-component.css */
+.body-email-verification {
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-email-verification {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .title-email-verification {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .step {
+    background: #d3d3d3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .step.active {
+    background: #6c63ff;
+    color: white;
+  }
+  
+  .message-email-verification {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .code-input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .button-validate {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .button-validate:hover {
+    background-color: #5754d1;
+  }
+  
+  .button-resend {
+    width: 100%;
+    padding: 12px;
+    background-color: #5754d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .button-resend:hover {
+    background-color: #6c63ff;
+  }
+  
