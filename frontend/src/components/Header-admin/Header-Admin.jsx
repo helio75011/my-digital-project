@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header-Admin.css'; // Assurez-vous de créer ce fichier CSS
+import { Link } from 'react-router-dom';
 
 function HeaderAdmin() {
   return (
     <div className="sidebarAdmin">
       <div className="menuItem">
         <span className="icon">&#x1F4CA;</span>
-        <span className="title">Journal</span>
+        {/* <span className="title">Journal</span> */}
+        <Link className='title' to="/diary">Journal</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4AC;</span>
@@ -18,7 +20,8 @@ function HeaderAdmin() {
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4C5;</span>
-        <span className="title">Calendrier</span>
+        {/* <span className="title">Calendrier</span> */}
+        <Link className='title' to="/calendar">Calendrier</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>

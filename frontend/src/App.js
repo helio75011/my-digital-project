@@ -14,6 +14,7 @@ import CheckEmailLogin from "./Pages/Login/Check-Email-login/Check-Email-login";
 import ResultLogin from "./Pages/Login/Result-login/Result-login";
 // ADMIN --------------------------------------------------------------------------------
 import Diary from './Pages/Admin/Diary/Diary';
+import Calendar from './Pages/Admin/Calendar/Calendar';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         {/* ------------------------------------------------------------ */}
         {/* ADMNIN */}
         <Route path="/diary" element={<Diary />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </Router>
   );

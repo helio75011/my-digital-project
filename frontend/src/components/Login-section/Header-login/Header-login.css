@@ -75,7 +75,7 @@
   .sidebar-login {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     width: 100%; /* Pleine largeur en mobile */
   }
   
