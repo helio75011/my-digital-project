@@ -1,0 +1,20 @@
+/* src/CalendarHeader.css */
+.calendar-header {
+    background-color: #5a6782;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.calendar-month {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.calendar-description {
+    font-size: 14px;
+}

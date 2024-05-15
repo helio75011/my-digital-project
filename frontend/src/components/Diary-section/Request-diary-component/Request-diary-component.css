@@ -1,0 +1,83 @@
+/* src/RequestList.css */
+.request-list {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.toutes {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    margin-left: 10px;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.request-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.request-status {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.accept {
+    color: green;
+}
+
+.reject {
+    color: red;
+}
+
+.accepted {
+    background-color: #cce5ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.refused {
+    background-color: #f8d7da;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
