@@ -1,0 +1,37 @@
+.sidebarAdmin {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menuItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon {
+    font-size: 20px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    flex: 1;
+  }
+  

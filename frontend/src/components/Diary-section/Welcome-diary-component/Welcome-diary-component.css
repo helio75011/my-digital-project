@@ -1,0 +1,16 @@
+.welcomeBanner {
+    background-color: #3399FF; /* Couleur de fond bleu */
+    color: white; /* Texte en blanc */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Bords arrondis */
+  }
+  
+  .welcomeTitle {
+    font-size: 24px; /* Taille de la police pour le titre */
+    margin-bottom: 8px; /* Espace sous le titre */
+  }
+  
+  .welcomeMessage {
+    font-size: 18px; /* Taille de la police pour le message */
+  }
+  

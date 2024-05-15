@@ -1,4 +1,7 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Acceuil from "./Pages/Acceuil/Acceuil";
+// LOGIN ---------------------------------------------------------------------------------
 import Login from "./Pages/Login/Login";
 import RoleLogin from "./Pages/Login/Role-login/Role-login";
 import VolunteerLogin from "./Pages/Login/Volunteer-login/Volunteer-login";
@@ -9,12 +12,14 @@ import WeekPsycho from "./Pages/Login/Psychologist-login/Week-psycho/Week-psycho
 import FinishFormLogin from "./Pages/Login/Finish-Form-login/Finish-Form-login";
 import CheckEmailLogin from "./Pages/Login/Check-Email-login/Check-Email-login";
 import ResultLogin from "./Pages/Login/Result-login/Result-login";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// ADMIN --------------------------------------------------------------------------------
+import Diary from './Pages/Admin/Diary/Diary';
 
 function App() {
   return (
     <Router>
       <Routes>
+        {/* LOGIN */}
         <Route exact path="/" element={<Acceuil />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RoleLogin />} />
@@ -26,6 +31,10 @@ function App() {
         <Route path="/finish-form" element={<FinishFormLogin />} />
         <Route path="/email-verification" element={<CheckEmailLogin />} />
         <Route path="/result-login" element={<ResultLogin />} />
+        {/* END LOGIN */}
+        {/* ------------------------------------------------------------ */}
+        {/* ADMNIN */}
+        <Route path="/diary" element={<Diary />} />
       </Routes>
     </Router>
   );
