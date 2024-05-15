@@ -1,6 +1,7 @@
 // src/Connexion.js
 import React, { useState } from 'react';
 import './Connection-login.css';
+import { Link } from 'react-router-dom';
 
 const ConnectionLogin = () => {
   const [email, setEmail] = useState('');
@@ -35,7 +36,8 @@ const ConnectionLogin = () => {
             required
           />
           <a className="link" href="#">récupérer le mot de passe</a>
-          <button className="button" type="submit">Me connecter</button>
+          {/* <button className="button" type="submit">Me connecter</button> */}
+          <Link className="button" to="/diary">Me connecter</Link>
         </form>
       </div>
     </div>
