@@ -16,7 +16,8 @@ function HeaderAdmin() {
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F465;</span>
-        <span className="title">Mes patients</span>
+        {/* <span className="title">Mes patients</span> */}
+        <Link className='title' to="/patients">Mes patients</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4C5;</span>

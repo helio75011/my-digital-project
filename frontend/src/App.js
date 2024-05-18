@@ -15,6 +15,7 @@ import ResultLogin from "./Pages/Login/Result-login/Result-login";
 // ADMIN --------------------------------------------------------------------------------
 import Diary from './Pages/Admin/Diary/Diary';
 import Calendar from './Pages/Admin/Calendar/Calendar';
+import Patients from './Pages/Admin/Patients/Patients';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         {/* ADMNIN */}
         <Route path="/diary" element={<Diary />} />
         <Route path="/calendar" element={<Calendar />} />
+        <Route path="/patients" element={<Patients />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,49 @@
+/* src/UISection.css */
+.ui-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slot-button {
+    background-color: #5a6782;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    border: 1px solid #ff5e00;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
