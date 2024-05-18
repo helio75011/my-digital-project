@@ -1,0 +1,67 @@
+/* src/AlertNotification.css */
+.alert-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.bell-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.alert-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 10px;
+}
+
+.alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.close-icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alert-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.alert-avatar img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cancel-button {
+    background: none;
+    border: 1px solid #ff5e00;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ff5e00;
+    cursor: pointer;
+    margin-top: 5px;
+}
