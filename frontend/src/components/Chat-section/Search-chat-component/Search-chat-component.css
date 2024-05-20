@@ -1,0 +1,74 @@
+/* src/ChatList.css */
+.chat-list-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.search-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #888;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-item {
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.chat-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.chat-details {
+    flex: 1;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chat-name {
+    font-weight: bold;
+}
+
+.chat-time {
+    font-size: 12px;
+    color: #888;
+}
+
+.chat-message {
+    font-size: 14px;
+    color: #555;
+}

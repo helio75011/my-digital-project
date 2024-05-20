@@ -1,8 +1,16 @@
 import React from 'react'
+import './Resource.css'
+import HeaderLogin from '../../../components/Login-section/Header-login/Header-login'
+import HeaderAdmin from '../../../components/Header-admin/Header-Admin'
 
 const Resource = () => {
   return (
-    <div>Resource</div>
+    <div>
+      <HeaderLogin />
+      <div className='Resource-flex'>
+        <HeaderAdmin />        
+      </div>
+    </div>
   )
 }
 
