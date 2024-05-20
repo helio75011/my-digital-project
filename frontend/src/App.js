@@ -16,6 +16,8 @@ import ResultLogin from "./Pages/Login/Result-login/Result-login";
 import Diary from './Pages/Admin/Diary/Diary';
 import Calendar from './Pages/Admin/Calendar/Calendar';
 import Patients from './Pages/Admin/Patients/Patients';
+import Chat from './Pages/Admin/Chat/Chat';
+import Event from './Pages/Admin/Event/Event';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/diary" element={<Diary />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/patients" element={<Patients />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/event" element={<Event />} />
       </Routes>
     </Router>
   );

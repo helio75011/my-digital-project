@@ -12,7 +12,8 @@ function HeaderAdmin() {
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4AC;</span>
-        <span className="title">Chat</span>
+        {/* <span className="title">Chat</span> */}
+        <Link className='title' to="/chat">Chat</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F465;</span>
@@ -26,7 +27,8 @@ function HeaderAdmin() {
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>
-        <span className="title">Événements</span>
+        {/* <span className="title">Événements</span> */}
+        <Link className='title' to="/event">Événements</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>
