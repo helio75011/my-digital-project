@@ -1,0 +1,64 @@
+/* src/EventsGrid.css */
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.event-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-location {
+    font-size: 14px;
+    color: #555;
+}
+
+.load-more {
+    background-color: #fff;
+    color: #5a6782;
+    border: 1px solid #5a6782;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
