@@ -18,6 +18,9 @@ import Calendar from './Pages/Admin/Calendar/Calendar';
 import Patients from './Pages/Admin/Patients/Patients';
 import Chat from './Pages/Admin/Chat/Chat';
 import Event from './Pages/Admin/Event/Event';
+import PageEvent from './Pages/Admin/Event/Page-Event/Page-Event';
+import Resource from './Pages/Admin/Resource/Resource';
+import PageResource from './Pages/Admin/Resource/Page-Resource/Page-Resource';
 
 function App() {
   return (
@@ -43,6 +46,9 @@ function App() {
         <Route path="/patients" element={<Patients />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/event" element={<Event />} />
+        <Route path="/page-event" element={<PageEvent />} />
+        <Route path="/resource" element={<Resource />} />
+        <Route path="/page-resource" element={<PageResource />} />
       </Routes>
     </Router>
   );

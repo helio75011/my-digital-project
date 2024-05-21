@@ -1,0 +1,144 @@
+/* src/BlogPostsGrid.css */
+.blog-posts-grid {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.search-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.search-icon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #888;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+}
+
+.filter-select {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.post-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-category {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.post-category.isolement-social {
+    color: #ff5e00;
+}
+
+.post-category.santé-mentale {
+    color: #5a6782;
+}
+
+.post-category.solitude-sociale {
+    color: #007bff;
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.post-author {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.load-more {
+    background-color: #fff;
+    color: #5a6782;
+    border: 1px solid #5a6782;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
