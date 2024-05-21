@@ -1,0 +1,131 @@
+/* src/EventDetail.css */
+.event-detail {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.event-author-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.event-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.event-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.event-location {
+    background-color: #eee;
+    color: #555;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    margin-bottom: 20px;
+}
+
+.event-tags {
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.event-participants {
+    margin-bottom: 20px;
+}
+
+.participants-list {
+    display: flex;
+}
+
+.participant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.participant img {
+    border-radius: 50%;
+}
+
+.participate-button {
+    background-color: #5a6782;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.event-sidebar {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-info h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.event-info span {
+    color: #888;
+    font-size: 14px;
+}

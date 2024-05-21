@@ -1,6 +1,7 @@
 // src/EventsGrid.js
 import React from 'react';
 import './Grid-event-component.css';
+import { Link } from 'react-router-dom';
 
 const events = [
     { id: 1, date: '5 avril à 18h30', title: 'ART Therapie', description: 'Ateliers d’artisanat et d’art en groupe pour explorer...', location: 'Paris 01', image: 'https://via.placeholder.com/150' },
@@ -17,6 +18,7 @@ const GridEventComponent = () => {
     return (
         <div className="events-grid">
             {events.map(event => (
+                <Link to="/page-event">
                 <div className="event-card" key={event.id}>
                     <img className="event-image" src={event.image} alt={event.title} />
                     <div className="event-details">
@@ -26,6 +28,7 @@ const GridEventComponent = () => {
                         <div className="event-location">{event.location}</div>
                     </div>
                 </div>
+                </Link>
             ))}
             <button className="load-more">Voir plus</button>
         </div>

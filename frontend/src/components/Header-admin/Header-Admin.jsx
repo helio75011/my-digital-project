@@ -32,7 +32,8 @@ function HeaderAdmin() {
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>
-        <span className="title">Ressources</span>
+        {/* <span className="title">Ressources</span> */}
+        <Link className='title' to="/resource">Ressources</Link>
       </div>
       <div className="menuGroup">
         <div className="menuItem">
