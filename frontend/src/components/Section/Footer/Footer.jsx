@@ -10,25 +10,28 @@ const Footer = () => {
       <div className="footerContent">
         <div className="aboutSection">
           <h4>Soutien Plus</h4>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.</p>
+          <p>© 2024 Soutien Plus </p>
         </div>
         <div className="linksSection">
-          <h4>Heading</h4>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
+          <h4>Soutien Plus</h4>
+          <a href="#">À propos</a>
+          <a href="#">Devenir bénévole</a>
+          <a href="#">Événements</a>
+          <a href="#">Conseils</a>
         </div>
         <div className="linksSection">
-          <h4>Heading</h4>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
+          <h4>Aide</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Situation de crise</a>
+          <a href="#">Contact</a>
+          <a href="#">Partenariat</a>
         </div>
         <div className="linksSection">
-          <h4>Heading</h4>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
-          <a href="#">Link here</a>
+          <h4>Termes</h4>
+          <a href="#">Données personnelles</a>
+          <a href="#">Modération des avis</a>
+          <a href="#">Mentions Légales</a>
+          <a href="#">CGV</a>
         </div>
         <div className="socialMediaSection">
           <h4>Restez connecté</h4>
