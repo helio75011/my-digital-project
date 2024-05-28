@@ -1,0 +1,105 @@
+/* src/UserHeader.css */
+.user-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5e00;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1000;
+}
+
+.notification-dropdown, .help-dropdown, .profile-dropdown {
+    padding: 10px;
+}
+
+.alert-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alert-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-content p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.alert-content button {
+    background-color: transparent;
+    border: 1px solid #ff5e00;
+    border-radius: 20px;
+    color: #ff5e00;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.notification-dropdown .alert-item:last-child,
+.help-dropdown p:last-child,
+.profile-dropdown p:last-child {
+    margin-bottom: 0;
+}
+
+.notification-dropdown p, .help-dropdown p, .profile-dropdown p {
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+}

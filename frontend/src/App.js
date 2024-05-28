@@ -21,6 +21,7 @@ import Event from './Pages/Admin/Event/Event';
 import PageEvent from './Pages/Admin/Event/Page-Event/Page-Event';
 import Resource from './Pages/Admin/Resource/Resource';
 import PageResource from './Pages/Admin/Resource/Page-Resource/Page-Resource';
+import Count from './Pages/Admin/Count/Count';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/page-event" element={<PageEvent />} />
         <Route path="/resource" element={<Resource />} />
         <Route path="/page-resource" element={<PageResource />} />
+        <Route path="/count" element={<Count />} />
       </Routes>
     </Router>
   );

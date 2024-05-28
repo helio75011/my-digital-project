@@ -13,6 +13,7 @@ const HeaderLogin = () => {
         </Link>
         <div className="sidebar-login">
           <div className="nav-actions-login">
+            <Link className="sign-in-login" to="/count"><b>Mon compte</b></Link>
             <Link className="sign-in-login" to="/login"><b>S'identifier</b></Link>
             {/* <a href="/start" className="start-login">Commencer</a> */}
             <Link className='start-login' to="/register">Commencer</Link>

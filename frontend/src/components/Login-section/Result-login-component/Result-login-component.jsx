@@ -24,7 +24,7 @@ const ResultLoginComponent = () => {
     {
       title: "Plan premium",
       soustitle: "Soutien supplémentaire",
-      price: "€10/mois",
+      price: "€15/mois",
       titlefeatures: "Inclus :",
       features: ["accès aux ressources", "suivi personnalisé", "consultation individuelle", "support"]
     }
