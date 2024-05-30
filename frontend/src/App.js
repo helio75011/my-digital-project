@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
+import './App.css';
 
 import Acceuil from "./Pages/Acceuil/Acceuil";
 // LOGIN ---------------------------------------------------------------------------------

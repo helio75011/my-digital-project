@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 /* src/PromoSection.css */
 .promo-section {
   display: flex;
@@ -19,6 +29,7 @@
 .promo-text h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  font-family: 'RecoletaAltBold';
 }
 
 .promo-text h1 span {
@@ -28,17 +39,20 @@
 .promo-text h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  font-family: 'RecoletaAltBold';
 }
 
 .promo-text p {
   font-size: 16px;
   margin-bottom: 20px;
   color: #555;
+  font-family: 'ModernEraRegular';
 }
 
 .promo-buttons {
   display: flex;
   align-items: center;
+  font-family: 'ModernEraRegular';
 }
 
 .start-button, .learn-more-button {
@@ -50,6 +64,7 @@
   font-size: 14px;
   cursor: pointer;
   margin-right: 10px;
+  font-family: 'ModernEraRegular';
 }
 
 .learn-more-button {

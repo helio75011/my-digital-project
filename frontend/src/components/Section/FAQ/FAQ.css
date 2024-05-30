@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 /* src/FAQSection.css */
 .faq-section {
   display: flex;
@@ -26,6 +36,7 @@
 .faq-content h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  font-family: 'RecoletaAltBold';
 }
 
 .faq-item {

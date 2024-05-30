@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .howItWorksContainer {
     display: flex;
     align-items: center;
@@ -24,6 +34,7 @@
   .howItWorksTitle {
     font-size: 2rem;
     margin-bottom: 30px;
+    font-family: 'RecoletaAltBold';
   }
   
   .howItWorksSteps {

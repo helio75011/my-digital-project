@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .socialCalendarContainer {
     display: flex;
     flex-direction: column;
@@ -11,6 +21,7 @@
     font-size: 2rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    font-family: 'RecoletaAltBold';
   }
   
   .socialCalendarHeader p {

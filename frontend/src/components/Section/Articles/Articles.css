@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .articlesContainer {
     display: flex;
     flex-direction: column;
@@ -16,6 +26,7 @@
   .articlesHeader h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    font-family: 'RecoletaAltBold';
   }
   
   .articlesHeader p {

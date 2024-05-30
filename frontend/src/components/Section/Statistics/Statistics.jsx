@@ -8,7 +8,7 @@ const Statistics = () => {
     <section className="statistics-section">
       <div className='statistic-parent'>
         <div className="statistic">
-          <span className="">plus</span>
+          <span className="statistic-plus">plus</span>
           <span className="statistic-number">200</span>
           <span className="statistic-description">psychologues</span>
         </div>
@@ -16,7 +16,7 @@ const Statistics = () => {
       </div>
       <div className='statistic-parent'>
         <div className="statistic">
-          <span className="">plus</span>
+          <span className="statistic-plus">plus</span>
           <span className="statistic-number">1000</span>
           <span className="statistic-description">participants</span>
         </div>

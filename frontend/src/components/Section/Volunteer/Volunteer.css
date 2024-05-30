@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .volunteerSection {
     display: flex;
     flex-direction: column;
@@ -15,6 +25,7 @@
   .volunteerTitle {
     margin-bottom: 20px;
     font-size: 2em; /* Example size */
+    font-family: 'RecoletaAltBold';
   }
   
   .volunteerSubtitle {
