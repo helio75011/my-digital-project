@@ -1,19 +1,31 @@
+// app.js
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const articleRoutes = require('./routes/articleRoutes');
+const eventRoutes = require('./routes/eventRoutes');
+const userRoutes = require('./routes/userRoutes');
+const protectedRoutes = require('./routes/protectedRoutes'); // Importer les routes protégées
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+// Configurer CORS
+app.use(cors());
 
 // Configurer body-parser pour analyser les requêtes JSON
 app.use(bodyParser.json());
 
-// Servir les fichiers statiques
+// Configurer pour servir les fichiers statiques
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Utiliser les routes
 app.use(articleRoutes);
+app.use(eventRoutes);
+app.use(userRoutes);
+app.use(protectedRoutes); // Utiliser les routes protégées
 
 // Démarrer le serveur
 app.listen(port, () => {

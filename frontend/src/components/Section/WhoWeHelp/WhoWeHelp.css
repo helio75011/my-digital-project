@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     padding: 50px; /* Adjust padding to fit your design */
     background-color: #F8F4F2; /* Replace with actual color if necessary */
+    max-width: 1200px;
+    margin: 50px auto;
   }
   
   .content {

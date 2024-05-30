@@ -19,11 +19,11 @@ const Acceuil = () => {
         <Header />
         <Set />
         <Statistics />
+        <SocialCalendar />
         <WhoWeHelp />
         <Volunteer />
         <HowItWorks />
         <Articles />
-        <SocialCalendar />
         <PricingPlan />
         <Testimonials />
         <FAQ />

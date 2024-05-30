@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     padding: 50px;
     background-color: #F8F4F2;
+    margin: auto;
+    max-width: 1200px;
   }
   
   .contactInfo {
@@ -20,6 +22,7 @@
   .contactDescription {
     font-size: 1rem;
     margin-bottom: 20px;
+    width: 60%;
   }
   
   .contactWarning {

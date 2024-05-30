@@ -5,6 +5,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px 0; /* Adjust padding as needed */
+    max-width: 1200px;
+    margin: 50px auto;
   }
   
   .statistic {

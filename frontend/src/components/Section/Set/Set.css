@@ -1,53 +1,68 @@
-/* Set.css */
-.support-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #F8F4F2; /* Replace with the actual background color */
-    padding: 50px; /* Adjust padding as needed */
-  }
-  
-  .support-content {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .support-image {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .support-image img {
-    width: 100%;
-    height: auto;
-  }
-  
-  h2 {
-    font-size: 48px; /* Adjust the font size as needed */
-    margin-bottom: 10px;
-  }
-  
-  .support-title {
-    font-size: 36px; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-  }
-  
-  .support-text {
-    font-size: 18px; /* Adjust the font size as needed */
-    margin-bottom: 30px;
-  }
-  
-  .start-button {
-    background-color: #636C8F; /* Example button color */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px; /* Adjust the font size as needed */
-    cursor: pointer;
-    border-radius: 5px; /* Adjust as needed for the design */
-    text-transform: uppercase; /* Example text style */
-  }
-  
-  /* Responsive design adjustments can be made as needed */
-  
+/* src/PromoSection.css */
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.promo-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.promo-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.promo-text h1 span {
+  color: #ff5e00;
+}
+
+.promo-text h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.promo-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.promo-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.start-button, .learn-more-button {
+  background-color: #5a6782;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.learn-more-button {
+  background-color: transparent;
+  color: #5a6782;
+  border: 1px solid #5a6782;
+}
+
+.promo-image {
+  flex: 1;
+}
+
+.promo-image img {
+  width: 100%;
+  border-radius: 10px;
+}

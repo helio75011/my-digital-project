@@ -1,38 +1,39 @@
 import React from 'react';
 import './Header-Admin.css'; // Assurez-vous de créer ce fichier CSS
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function HeaderAdmin() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/login');
+  };
+
   return (
     <div className="sidebarAdmin">
       <div className="menuItem">
         <span className="icon">&#x1F4CA;</span>
-        {/* <span className="title">Journal</span> */}
         <Link className='title' to="/diary">Journal</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4AC;</span>
-        {/* <span className="title">Chat</span> */}
         <Link className='title' to="/chat">Chat</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F465;</span>
-        {/* <span className="title">Mes patients</span> */}
         <Link className='title' to="/patients">Mes patients</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4C5;</span>
-        {/* <span className="title">Calendrier</span> */}
         <Link className='title' to="/calendar">Calendrier</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>
-        {/* <span className="title">Événements</span> */}
         <Link className='title' to="/event">Événements</Link>
       </div>
       <div className="menuItem">
         <span className="icon">&#x1F4E6;</span>
-        {/* <span className="title">Ressources</span> */}
         <Link className='title' to="/resource">Ressources</Link>
       </div>
       <div className="menuGroup">
@@ -45,7 +46,7 @@ function HeaderAdmin() {
           <span className="title">Paramètres</span>
         </div>
       </div>
-      <div className="menuItem">
+      <div className="menuItem" onClick={handleLogout}>
         <span className="icon">&#x1F512;</span>
         <span className="title">Se déconnecter</span>
       </div>

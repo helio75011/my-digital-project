@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
+    margin: 40px auto;
     padding: 20px;
     text-align: center;
+    max-width: 1200px;
   }
   
   .volunteerHeader {
@@ -23,7 +24,7 @@
 
   .volunteerList-parent {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   
   .volunteerList {

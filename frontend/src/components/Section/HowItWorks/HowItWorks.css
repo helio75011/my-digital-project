@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
   }
   
   .howItWorksImageWrapper {

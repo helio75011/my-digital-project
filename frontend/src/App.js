@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProtectedRoute from './ProtectedRoute';
 
 import Acceuil from "./Pages/Acceuil/Acceuil";
 // LOGIN ---------------------------------------------------------------------------------
@@ -24,6 +25,8 @@ import PageResource from './Pages/Admin/Resource/Page-Resource/Page-Resource';
 import Count from './Pages/Admin/Count/Count';
 
 function App() {
+  const isAuthenticated = !!localStorage.getItem('token');
+
   return (
     <Router>
       <Routes>
@@ -42,7 +45,7 @@ function App() {
         {/* END LOGIN */}
         {/* ------------------------------------------------------------ */}
         {/* ADMNIN */}
-        <Route path="/diary" element={<Diary />} />
+        <Route path="/diary" element={<ProtectedRoute element={Diary} />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/patients" element={<Patients />} />
         <Route path="/chat" element={<Chat />} />

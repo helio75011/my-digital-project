@@ -4,6 +4,8 @@
     align-items: center;
     padding: 40px;
     background-color: #F8F4F2;
+    margin: auto;
+    max-width: 1200px;
   }
   
   .pricingHeader {
