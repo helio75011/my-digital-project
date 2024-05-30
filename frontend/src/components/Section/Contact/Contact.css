@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .contactContainer {
     display: flex;
     align-items: center;
@@ -5,6 +15,8 @@
     flex-wrap: wrap;
     padding: 50px;
     background-color: #F8F4F2;
+    margin: auto;
+    max-width: 1200px;
   }
   
   .contactInfo {
@@ -20,6 +32,7 @@
   .contactDescription {
     font-size: 1rem;
     margin-bottom: 20px;
+    width: 60%;
   }
   
   .contactWarning {
@@ -46,6 +59,7 @@
   
   .contactForm h2 {
     margin-bottom: 30px;
+    font-family: 'RecoletaAltBold';
   }
 
   .contactForm .NFAQ  {

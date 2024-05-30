@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .pricingContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     background-color: #F8F4F2;
+    margin: auto;
+    max-width: 1200px;
   }
   
   .pricingHeader {
@@ -13,6 +25,7 @@
   .pricingHeader h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    font-family: 'RecoletaAltBold';
   }
   
   .pricingHeader p {

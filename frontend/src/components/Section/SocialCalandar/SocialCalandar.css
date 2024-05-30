@@ -1,15 +1,27 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .socialCalendarContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 50px auto;
     padding: 20px;
+    max-width: 1200px;
   }
   
   .socialCalendarHeader h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    font-family: 'RecoletaAltBold';
   }
   
   .socialCalendarHeader p {
@@ -45,6 +57,7 @@
     gap: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    width: 80%;
   }
   
   .eventCard {

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 /* Statistics.css */
 .statistics-section {
     display: flex;
@@ -5,6 +15,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px 0; /* Adjust padding as needed */
+    max-width: 1200px;
+    margin: 50px auto;
   }
   
   .statistic {
@@ -17,6 +29,7 @@
     color: #636C8F; /* Replace with the actual color from the design */
     font-size: 3rem; /* Adjust font size as needed */
     font-weight: bold;
+    font-family: 'RecoletaAltBold';
   }
   
   .statistic-description {
@@ -26,6 +39,10 @@
   .statistic-parent {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .statistic-plus {
+    font-family: 'ModernEraBold';
   }
   
   /* Add any additional global or specific styles as needed */

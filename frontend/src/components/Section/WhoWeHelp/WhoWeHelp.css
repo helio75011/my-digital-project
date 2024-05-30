@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('../../../fonts/Recoleta\ Alt\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('../../../fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 /* WhoWeHelp.css */
 .who-we-help {
     display: flex;
@@ -6,12 +16,18 @@
     flex-wrap: wrap;
     padding: 50px; /* Adjust padding to fit your design */
     background-color: #F8F4F2; /* Replace with actual color if necessary */
+    max-width: 1200px;
+    margin: 50px auto;
   }
   
   .content {
     max-width: 50%;
   }
 
+  .title-wwh h2 {
+    font-family: 'RecoletaAltBold';
+  }
+  
   .title-wwh {
     text-align: center;
   }

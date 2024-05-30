@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'RecoletaAltBold';
+  src: url('./fonts/Recoleta Alt Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RecoletaAltMedium';
+  src: url('./fonts/Recoleta Alt Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraBold';
+  src: url('./fonts/ModernEra-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ModernEraRegular';
+  src: url('./fonts/ModernEra-Regular.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
 }
