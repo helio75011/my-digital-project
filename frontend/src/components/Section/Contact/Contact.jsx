@@ -4,7 +4,7 @@ import Talk from './uploads/talk.png'
 
 const Contact = () => {
   return (
-    <div className='contactContainer-parent'>
+    <div className='contactContainer-parent' id='contact'>
       <div className="contactContainer">
         <div className="contactInfo">
           <img src={Talk} />

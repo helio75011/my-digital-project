@@ -1,0 +1,124 @@
+/* src/MoodTracker.css */
+/* src/WellBeingHeader.css */
+.well-being-header {
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.history-button {
+    background-color: transparent;
+    border: 1px solid #ff5e00;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ff5e00;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.notes-text {
+    font-size: 18px;
+    color: #333;
+    margin-left: auto;
+}
+
+.mood-tracker {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mood-today, .mood-factors {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.moods, .factors {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mood, .factor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mood.selected, .factor.selected {
+    background-color: #5a6782;
+    color: white;
+    border-color: #5a6782;
+}
+
+.week-overview {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.week-overview .day {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.save-button {
+    background-color: #5a6782;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}

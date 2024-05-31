@@ -36,16 +36,6 @@ function HeaderAdmin() {
         <span className="icon">&#x1F4E6;</span>
         <Link className='title' to="/resource">Ressources</Link>
       </div>
-      <div className="menuGroup">
-        <div className="menuItem">
-          <span className="icon">&#x1F4CC;</span>
-          <span className="title">Centre d'aide</span>
-        </div>
-        <div className="menuItem">
-          <span className="icon">&#x1F4DD;</span>
-          <span className="title">Paramètres</span>
-        </div>
-      </div>
       <div className="menuItem" onClick={handleLogout}>
         <span className="icon">&#x1F512;</span>
         <span className="title">Se déconnecter</span>

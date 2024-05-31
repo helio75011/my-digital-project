@@ -1,53 +1,85 @@
-.sessionCard {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 15px;
-    margin: 10px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    font-family: Arial, sans-serif;
-  }
-  
-  .sessionInfo {
-    text-align: left;
-  }
-  
-  .sessionDate {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .sessionType {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .patientInfo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .patientIcon {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .patientName {
-    font-size: 16px;
-  }
-  
-  .sessionDiaryTitle {
-    display: flex;
-  }
+/* src/Sessions.css */
+.sessions {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .sessionDiaryLink {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-  }
+.sessions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-  .sessionCard-parent {
-    display: flex;
-  }
+.sessions-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.view-all {
+  background-color: transparent;
+  border: none;
+  color: #ff5e00;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.session-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.session-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.session-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.session-card-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+.more-options {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.session-card-body p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.session-person {
+  display: flex;
+  align-items: center;
+}
+
+.session-person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.session-person p {
+  margin: 0;
+  font-size: 14px;
+}

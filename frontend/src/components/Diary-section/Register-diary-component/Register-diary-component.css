@@ -1,3 +1,8 @@
+.eventRegister-parent {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .eventCard {
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 /* src/RecommendedArticles.css */
 .recommended-articles {
-    width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }

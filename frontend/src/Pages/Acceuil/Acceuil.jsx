@@ -17,18 +17,20 @@ const Acceuil = () => {
   return (
     <div className='body-landing'>
         <Header />
-        <Set />
-        <Statistics />
-        <SocialCalendar />
-        <WhoWeHelp />
-        <Volunteer />
-        <HowItWorks />
-        <Articles />
-        <PricingPlan />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-        <Footer />
+        <div className='body-acceuil'>
+          <Set />
+          <Statistics />
+          <SocialCalendar />
+          <WhoWeHelp />
+          <Volunteer />
+          <HowItWorks />
+          <Articles />
+          <PricingPlan />
+          <Testimonials />
+          <FAQ />
+          <Contact />
+          <Footer />
+        </div>
     </div>
   )
 }
