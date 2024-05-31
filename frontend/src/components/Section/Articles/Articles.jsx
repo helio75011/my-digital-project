@@ -8,7 +8,7 @@ import ImageSM3 from './uploads/ImageSM3.png'
 
 const Articles = () => {
   return (
-    <div className="articlesContainer">
+    <div className="articlesContainer" id='events'>
       <div className="articlesHeader">
         <h2>Articles et Conseils sur la santé mentale</h2>
         <p>Explorez des Ressources Expertes pour Cultiver l'Équilibre et la Santé Mentale</p>

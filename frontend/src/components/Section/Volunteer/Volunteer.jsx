@@ -5,7 +5,7 @@ import TickCircle from './uploads/tick-circle.png'
 
 const Volunteer = () => {
     return (
-      <section className='volunteerSection'>
+      <section className='volunteerSection' id='volunteer'>
         <div className='volunteerHeader-parent'>
           <div className='volunteerHeader'>
             <h1 className='volunteerTitle'>Devenez bénévole pour faire une différence</h1>

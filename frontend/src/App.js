@@ -47,14 +47,14 @@ function App() {
         {/* ------------------------------------------------------------ */}
         {/* ADMNIN */}
         <Route path="/diary" element={<ProtectedRoute element={Diary} />} />
-        <Route path="/calendar" element={<Calendar />} />
-        <Route path="/patients" element={<Patients />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/event" element={<Event />} />
-        <Route path="/page-event" element={<PageEvent />} />
-        <Route path="/resource" element={<Resource />} />
-        <Route path="/page-resource" element={<PageResource />} />
-        <Route path="/count" element={<Count />} />
+        <Route path="/calendar" element={<ProtectedRoute element={Calendar} />} />
+        <Route path="/patients" element={<ProtectedRoute element={Patients} />} />
+        <Route path="/chat" element={<ProtectedRoute element={Chat} />} />
+        <Route path="/event" element={<ProtectedRoute element={Event} />} />
+        <Route path="/page-event" element={<ProtectedRoute element={PageEvent} />} />
+        <Route path="/resource" element={<ProtectedRoute element={Resource} />} />
+        <Route path="/page-resource" element={<ProtectedRoute element={PageResource} />} />
+        <Route path="/count" element={<ProtectedRoute element={Count} />} />
       </Routes>
     </Router>
   );

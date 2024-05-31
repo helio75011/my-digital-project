@@ -23,12 +23,12 @@ const Header = () => {
             <button className="menu-icon" onClick={toggleSidebar}>
               X
             </button>
-            <a href="/about"><b>À propos</b></a>
-            <a href="/volunteer"><b>Bénévolat</b></a>
-            <a href="/advice"><b>Conseils</b></a>
-            <a href="/events"><b>Événements</b></a>
-            <a href="/faq"><b>FAQ</b></a>
-            <a href="/contact"><b>Contact</b></a>
+            <a href="#about"><b>À propos</b></a>
+            <a href="#volunteer"><b>Bénévolat</b></a>
+            <a href="#advice"><b>Conseils</b></a>
+            <a href="#events"><b>Événements</b></a>
+            <a href="#faq"><b>FAQ</b></a>
+            <a href="#contact"><b>Contact</b></a>
           </div>
           <div className="nav-actions">
             <Link className='sign-in' to="/login"><b>S'identifier</b></Link>

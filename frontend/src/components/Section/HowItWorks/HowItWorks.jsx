@@ -10,7 +10,7 @@ import Men from './uploads/men.png'
 
 const HowItWorks = () => {
   return (
-    <div className="howItWorksContainer">
+    <div className="howItWorksContainer" id='advice'>
       <div className="howItWorksImageWrapper">
         <img src={Profile} alt="Person" className="howItWorksImage" />
       </div>

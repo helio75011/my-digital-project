@@ -3,59 +3,60 @@ import React from 'react';
 import './Event-diary-component.css';
 
 const events = [
-    { 
-        id: 1, 
-        date: '05 avril 2024 à 18h30', 
-        title: 'ART Therapie', 
-        description: 'Lorem ipsum dolor sit amet consectetur...', 
-        location: 'Paris 01',
-        image: 'https://via.placeholder.com/100', 
-        avatar: 'https://via.placeholder.com/30'
+    {
+        date: '10 avril à 19h30',
+        title: 'Sérénité en Méditation',
+        description: 'Sessions de méditation guidée pour la relaxation...',
+        location: 'Paris 11',
+        image: 'https://via.placeholder.com/150',
+        person: 'https://via.placeholder.com/30'
     },
-    { 
-        id: 2, 
-        date: '05 avril 2024 à 18h30', 
-        title: 'ART Therapie', 
-        description: 'Lorem ipsum dolor sit amet consectetur...', 
-        location: 'Paris 01',
-        image: 'https://via.placeholder.com/100', 
-        avatar: 'https://via.placeholder.com/30'
+    {
+        date: '25 avril à 20h',
+        title: 'Café des Connexions',
+        description: 'Rencontres sociales dans un café local...',
+        location: 'Paris 11',
+        image: 'https://via.placeholder.com/150',
+        person: 'https://via.placeholder.com/30'
     },
-    { 
-        id: 3, 
-        date: '05 avril 2024 à 18h30', 
-        title: 'ART Therapie', 
-        description: 'Lorem ipsum dolor sit amet consectetur...', 
-        location: 'Paris 01',
-        image: 'https://via.placeholder.com/100', 
-        avatar: 'https://via.placeholder.com/30'
+    {
+        date: '2 mai à 14h30',
+        title: 'Marche Ensemble',
+        description: 'Club de marche en plein air pour l\'exercice physique...',
+        location: 'Paris 04',
+        image: 'https://via.placeholder.com/150',
+        person: 'https://via.placeholder.com/30'
     },
-    { 
-        id: 4, 
-        date: '05 avril 2024 à 18h30', 
-        title: 'ART Therapie', 
-        description: 'Lorem ipsum dolor sit amet consectetur...', 
-        location: 'Paris 01',
-        image: 'https://via.placeholder.com/100', 
-        avatar: 'https://via.placeholder.com/30'
-    },
+    {
+        date: '23 avril à 15h45',
+        title: 'Exploration Culturelle',
+        description: 'Sorties culturelles pour découvrir l\'art, l\'histoire...',
+        location: 'Paris 04',
+        image: 'https://via.placeholder.com/150',
+        person: 'https://via.placeholder.com/30'
+    }
 ];
 
 const EventDiaryComponent = () => {
     return (
-        <div className="recommended-events">
-            <h1>Événements Recommandés Pour Vous <span className="historique">historique</span></h1>
-            <div className="events-container">
-                {events.map(event => (
-                    <div className="event-item" key={event.id}>
-                        <img className="event-image" src={event.image} alt="Event" />
+        <div className="events-recommended">
+            <div className="events-header">
+                <h2>Événements Recommandés Pour Vous</h2>
+                <button className="view-all">voir tout</button>
+            </div>
+            <div className="event-cards">
+                {events.map((event, index) => (
+                    <div className="event-card" key={index}>
+                        <img src={event.image} alt={event.title} className="event-image" />
                         <div className="event-details">
-                            <div className="event-date">{event.date}</div>
-                            <h2 className="event-title">{event.title}</h2>
+                            <p className="event-date">{event.date}</p>
+                            <p className="event-title">{event.title}</p>
                             <p className="event-description">{event.description}</p>
-                            <div className="event-location">{event.location}</div>
+                            <div className="event-footer">
+                                <p className="event-location">{event.location}</p>
+                                <img src={event.person} alt="Person" className="event-person" />
+                            </div>
                         </div>
-                        <img className="event-avatar" src={event.avatar} alt="Avatar" />
                     </div>
                 ))}
             </div>

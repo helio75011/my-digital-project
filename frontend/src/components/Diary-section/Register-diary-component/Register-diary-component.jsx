@@ -3,7 +3,7 @@ import './Register-diary-component.css'; // Assurez-vous de créer ce fichier CS
 
 function RegisterDiaryComponent() {
   return (
-    <div>
+    <div className='eventRegister-parent'>
         <div className='eventTitle-parent'>
             <h1>Votre Inscription Aux Evénements</h1>
             <a href='#'>voir tout</a>

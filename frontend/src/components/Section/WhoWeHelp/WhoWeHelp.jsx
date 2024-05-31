@@ -4,7 +4,7 @@ import Profile from './uploads/profile.png'
 
 const WhoWeHelp = () => {
   return (
-    <section>
+    <section id="about">
       <div className='title-wwh'>
         <h2>Qui aidons nous</h2>
         <p className="intro">Notre plateforme s'adresse à tous ceux qui se sentent isolés et cherchent un lien avec d'autres personnes.</p>

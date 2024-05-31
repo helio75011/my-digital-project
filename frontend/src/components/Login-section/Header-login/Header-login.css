@@ -1,91 +1,82 @@
-/* Header.css */
-.header-login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #F8F4F2; /* Assuming a white background */
-    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); For a subtle shadow */
-  }
-  
-  .navbar-login {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-logo-login {
-    font-weight: bold;
-    font-size: 24px;
-    /* Add additional styles for the logo */
-  }
-  
-  .nav-links-login a,
-  .nav-actions-login a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333333; /* A darker text color for better readability */
-    /* Add additional styles for the links */
-  }
-  
-  .nav-actions-login .sign-in-login {
-    background: none;
-    border: none;
-    /* Styles for the 'Sign In' text link */
-  }
-  
-  .nav-actions-login .start-login {
-    background-color: #636C8F; /* Example blue background */
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    /* Additional styles for the 'Start' button */
-  }
+/* src/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
 
-  .nav-actions-login .sign-in-login {
-    background-color: #fff; /* Example blue background */
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    /* Additional styles for the 'Start' button */
-  }
-  
-  /* Add responsive design or other specific styles as needed */
-  
-  .header-login {
-    position: relative;
-  }
-  
-  .navbar-login {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .menu-icon-login {
-    display: none; /* Cache le menu burger sur desktop */
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  .sidebar-login {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    width: 100%; /* Pleine largeur en mobile */
-  }
-  
-  .sidebar-login a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-  }
-  
-  /* Styles spécifiques pour mobile */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
 
-  
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon, .profile {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-body {
+  padding: 10px;
+}
+
+.notification-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.notification-item p {
+  margin: 5px 0;
+}
+
+.notification-item button {
+  background-color: transparent;
+  border: 1px solid #ff5e00;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ff5e00;
+  cursor: pointer;
+}
+
+.help p, .profile p {
+  margin: 10px 0;
+  cursor: pointer;
+}

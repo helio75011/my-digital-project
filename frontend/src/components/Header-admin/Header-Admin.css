@@ -1,4 +1,6 @@
 .sidebarAdmin {
+    position: fixed;
+    margin-top: 50px;
     width: 250px;
     height: 100vh;
     background-color: white;
@@ -33,5 +35,7 @@
   
   .title {
     flex: 1;
+    text-decoration: none;
+    color: #000;
   }
   
