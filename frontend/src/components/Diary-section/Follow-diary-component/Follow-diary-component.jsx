@@ -1,6 +1,7 @@
 // src/MoodTracker.js
 import React, { useState } from 'react';
 import './Follow-diary-component.css';
+import { Link } from 'react-router-dom';
 
 const moods = [
     { icon: '😐', label: 'Ennui' },
@@ -33,7 +34,7 @@ const FollowDiaryComponent = () => {
             <div className="header-container">
                 <div className="header-text">
                     <h2>Suivi Du Bien-Être</h2>
-                    <button className="history-button">historique</button>
+                    <Link to='/statistic'><button className="history-button">historique</button></Link>
                 </div>
                 <p className="notes-text">Mes notes</p>
             </div>

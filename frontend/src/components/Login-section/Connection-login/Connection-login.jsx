@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Connection-login.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const ConnectionLogin = () => {
     const [email, setEmail] = useState('');
@@ -65,7 +65,7 @@ const ConnectionLogin = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
-                    <a className="link" href="#">récupérer le mot de passe</a>
+                    <Link to='/reset-email'><a className="link" href="#">récupérer le mot de passe</a></Link>
                     <button className="button" type="submit">Me connecter</button>
                 </form>
                 {error && <div className="error">{error}</div>}

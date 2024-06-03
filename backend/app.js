@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const articleRoutes = require('./routes/articleRoutes');
 const eventRoutes = require('./routes/eventRoutes');
-const userRoutes = require('./routes/userRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 const protectedRoutes = require('./routes/protectedRoutes'); // Importer les routes protégées
 const path = require('path');
 const cors = require('cors');
@@ -24,7 +24,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Utiliser les routes
 app.use(articleRoutes);
 app.use(eventRoutes);
-app.use(userRoutes);
+app.use(adminRoutes);
 app.use(protectedRoutes); // Utiliser les routes protégées
 
 // Démarrer le serveur

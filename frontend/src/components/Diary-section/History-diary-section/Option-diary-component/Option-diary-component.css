@@ -1,0 +1,55 @@
+/* src/StatsNotesHeader.css */
+.stats-notes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #5a6782;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #5a6782;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button.selected {
+    background-color: #5a6782;
+    color: #fff;
+}
+
+.date-navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-buttons button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #f0f0f0;
+}

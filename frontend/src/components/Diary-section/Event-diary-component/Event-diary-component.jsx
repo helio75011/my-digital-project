@@ -1,6 +1,7 @@
 // src/RecommendedEvents.js
 import React from 'react';
 import './Event-diary-component.css';
+import { Link } from 'react-router-dom';
 
 const events = [
     {
@@ -42,7 +43,7 @@ const EventDiaryComponent = () => {
         <div className="events-recommended">
             <div className="events-header">
                 <h2>Événements Recommandés Pour Vous</h2>
-                <button className="view-all">voir tout</button>
+                <Link to='/event'><button className="view-all">voir tout</button></Link>
             </div>
             <div className="event-cards">
                 {events.map((event, index) => (
