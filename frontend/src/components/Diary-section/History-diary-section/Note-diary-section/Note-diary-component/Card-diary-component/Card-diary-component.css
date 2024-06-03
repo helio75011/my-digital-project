@@ -1,0 +1,62 @@
+/* src/NoteCard.css */
+.note-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.edit-icon {
+    cursor: pointer;
+}
+
+.note-body {
+    margin-top: 10px;
+}
+
+.note-effect {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.effect-tag {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.note-description {
+    font-size: 14px;
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.read-more {
+    background-color: #5a6782;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.char-count {
+    font-size: 12px;
+    color: #999;
+}

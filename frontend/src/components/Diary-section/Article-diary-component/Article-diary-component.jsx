@@ -1,6 +1,7 @@
 // src/RecommendedArticles.js
 import React from 'react';
 import './Article-diary-component.css';
+import { Link } from 'react-router-dom';
 
 const articles = [
     { 
@@ -40,7 +41,7 @@ const articles = [
 const ArticleDiaryComponent = () => {
     return (
         <div className="recommended-articles">
-            <h1>Articles Recommandés Pour Vous <span className="voir-tout">voir tout</span></h1>
+            <h1>Articles Recommandés Pour Vous <Link to='/resource'><span className="voir-tout">voir tout</span></Link></h1>
             <div className="articles-container">
                 {articles.map(article => (
                     <div className="article-item" key={article.id}>

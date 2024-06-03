@@ -1,0 +1,24 @@
+/* src/NotesSection.css */
+.notes-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.notes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.voir-plus {
+    background-color: #5a6782;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 16px;
+}

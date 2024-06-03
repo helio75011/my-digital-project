@@ -1,0 +1,20 @@
+/* src/HistoriqueHeader.css */
+.historique-header {
+    background-color: #5a6782;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.historique-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.historique-header p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
