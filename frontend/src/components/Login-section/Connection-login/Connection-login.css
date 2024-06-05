@@ -3,7 +3,6 @@
     background-color: #f0f0f5;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -14,12 +13,21 @@
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
+    width: 17%;
+  }
+
+  .login-container h2 {
+    font-family: 'RecoletaAltBold';
+    align-items: left;
   }
   
-  .title {
+  .title-login {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    font-family: 'RecoletaAltBold';
+    display: flex;
+    justify-content: center;
   }
   
   .input {

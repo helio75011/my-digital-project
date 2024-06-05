@@ -1,0 +1,31 @@
+.contact-section {
+    padding: 20px;
+    background-color: #5a6782;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.contact-header {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #5a6782;
+    border-radius: 10px;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    display: inline;
+}
+
+.contact-header p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    display: inline;
+    margin-left: 20px;
+}
