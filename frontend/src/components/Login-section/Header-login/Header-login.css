@@ -7,6 +7,9 @@
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   font-family: Arial, sans-serif;
+  width: 100%;
+  margin-bottom: 20px;
+  position: fixed;
 }
 
 .logo {

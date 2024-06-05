@@ -47,8 +47,9 @@ const ConnectionLogin = () => {
     return (
         <div className='login-body'>
             <div className="login-container">
-                <h1 className="title">Connexion</h1>
+                <h1 className="title-login">Connexion</h1>
                 <form onSubmit={handleSubmit}>
+                    <h2>E-mail</h2>
                     <input
                         className="input"
                         type="email"
@@ -57,6 +58,7 @@ const ConnectionLogin = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
+                    <h2>Mot de passe</h2>
                     <input
                         className="input"
                         type="password"

@@ -45,9 +45,9 @@ const HeaderLogin = () => {
                     {showHelp && (
                         <div className="dropdown help">
                             <div className="dropdown-body">
-                                <p>Nous contacter</p>
-                                <p>Ressources de crise</p>
-                                <p>FAQ</p>
+                                <Link to='/contact-user'><p>Nous contacter</p></Link>
+                                <Link to='/ressource-crise'><p>Ressources de crise</p></Link>
+                                <Link to='/faq-user'><p>FAQ</p></Link>
                             </div>
                         </div>
                     )}
@@ -58,9 +58,9 @@ const HeaderLogin = () => {
                     {showProfile && (
                         <div className="dropdown profile">
                             <div className="dropdown-body">
-                                <Link to='/count'><p>Mon compte</p></Link>
-                                <p>Abonnement</p>
-                                <p>Mon psychologue</p>
+                                <Link to='/count-user'><p>Mon compte</p></Link>
+                                <Link to='/abonnement-user'><p>Abonnement</p></Link>
+                                <Link to='/psychologue-user'><p>Mon psychologue</p></Link>
                                 <p>Se déconnecter</p>
                             </div>
                         </div>

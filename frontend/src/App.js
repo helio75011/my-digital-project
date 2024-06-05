@@ -28,6 +28,8 @@ import PageResource from './Pages/Admin/Resource/Page-Resource/Page-Resource';
 import Count from './Pages/Admin/Count/Count';
 import Statistic from './Pages/Admin/Diary/History/Statistic/Statistic';
 import Note from './Pages/Admin/Diary/History/Note/Note';
+import Contact from './Pages/Admin/Contact/Contact';
+import Crise from './Pages/Admin/Crise/Crise';
 
 function App() {
   const isAuthenticated = !!localStorage.getItem('token');
@@ -60,9 +62,11 @@ function App() {
         <Route path="/page-event" element={<ProtectedRoute element={PageEvent} />} />
         <Route path="/resource" element={<ProtectedRoute element={Resource} />} />
         <Route path="/page-resource" element={<ProtectedRoute element={PageResource} />} />
-        <Route path="/count" element={<ProtectedRoute element={Count} />} />
+        <Route path="/count-user" element={<ProtectedRoute element={Count} />} />
+        <Route path="/contact-user" element={<ProtectedRoute element={Contact} />} />
         <Route path="/statistic" element={<ProtectedRoute element={Statistic} />} />
         <Route path="/note" element={<ProtectedRoute element={Note} />} />
+        <Route path="/ressource-crise" element={<ProtectedRoute element={Crise} />} />
       </Routes>
     </Router>
   );
