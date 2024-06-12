@@ -1,19 +1,19 @@
 import React from 'react'
-import './Crise.css'
+import './Doctor.css'
 import HeaderLogin from '../../../components/Login-section/Header-login/Header-login'
 import HeaderAdmin from '../../../components/Header-admin/Header-Admin'
-import CriseSection from '../../../components/Crise-section/Crise-section'
+import DoctorSection from '../../../components/Doctor-section/Doctor-section'
 
-const Crise = () => {
+const Doctor = () => {
   return (
     <div>
         <HeaderLogin />
-        <div className='crise-flex'>
+        <div className='doctor-flex'>
             <HeaderAdmin />
-            <CriseSection />
+            <DoctorSection />
         </div>
     </div>
   )
 }
 
-export default Crise
+export default Doctor

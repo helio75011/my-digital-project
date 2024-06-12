@@ -1,13 +1,13 @@
 // src/AccountBanner.js
 import React from 'react';
-import './Welcome-count-component.css';
+import './Welcome-Subscription-component.css';
 
-const WelcomeCountComponent = () => {
+const WelcomeSubscriptionComponent = () => {
     return (
-        <div className="account-banner">
-            <span className="banner-title">Mon compte</span>
+        <div className="abonnement-header">
+            <h2>Abonnement</h2>
         </div>
     );
 };
 
-export default WelcomeCountComponent;
+export default WelcomeSubscriptionComponent;

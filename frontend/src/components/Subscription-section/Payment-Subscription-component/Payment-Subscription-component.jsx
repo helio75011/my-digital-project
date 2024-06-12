@@ -1,8 +1,8 @@
 // src/SubscriptionManagement.js
 import React from 'react';
-import './SubscriptionManagement.css';
+import './Payment-Subscription-component.css';
 
-const SubscriptionManagement = () => {
+const PaymentSubscriptionComponent = () => {
     return (
         <div className="subscription-management">
             <div className="section">
@@ -35,4 +35,4 @@ const SubscriptionManagement = () => {
     );
 };
 
-export default SubscriptionManagement;
+export default PaymentSubscriptionComponent;

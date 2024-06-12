@@ -1,0 +1,33 @@
+.psychologist-header {
+    background-color: #6c7ae0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.psychologist-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+}
+
+.psychologist-header p {
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.change-psychologist-button {
+    float: right;
+    background-color: white;
+    color: #6c7ae0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}

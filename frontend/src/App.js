@@ -30,6 +30,9 @@ import Statistic from './Pages/Admin/Diary/History/Statistic/Statistic';
 import Note from './Pages/Admin/Diary/History/Note/Note';
 import Contact from './Pages/Admin/Contact/Contact';
 import Crise from './Pages/Admin/Crise/Crise';
+import FAQ from './Pages/Admin/FAQ/FAQ';
+import Subscription from './Pages/Admin/Subscription/Subscription';
+import Doctor from './Pages/Admin/Doctor/Doctor';
 
 function App() {
   const isAuthenticated = !!localStorage.getItem('token');
@@ -67,6 +70,9 @@ function App() {
         <Route path="/statistic" element={<ProtectedRoute element={Statistic} />} />
         <Route path="/note" element={<ProtectedRoute element={Note} />} />
         <Route path="/ressource-crise" element={<ProtectedRoute element={Crise} />} />
+        <Route path="/faq-user" element={<ProtectedRoute element={FAQ} />} />
+        <Route path="/abonnement-user" element={<ProtectedRoute element={Subscription} />} />
+        <Route path="/psychologue-user" element={<ProtectedRoute element={Doctor} />} />
       </Routes>
     </Router>
   );
