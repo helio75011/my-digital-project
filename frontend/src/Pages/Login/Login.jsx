@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../components/Login-section/Header-login/Header-login'
+import Header from '../../components/Section/Header/Header'
 import FormLogin from './Form-login/Form-login'
 
 const Login = () => {
   return (
     <div>
-      <HeaderLogin />
+      <Header />
       <FormLogin />
     </div>
   )

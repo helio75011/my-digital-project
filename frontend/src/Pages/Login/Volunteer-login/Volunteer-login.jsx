@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../../components/Login-section/Header-login/Header-login'
+import Header from '../../../components/Section/Header/Header'
 import VolunteerComponent from '../../../components/Login-section/Volunteer-component/Volunteer-component'
 
 const VolunteerLogin = () => {
   return (
     <div>
-        <HeaderLogin />
+        <Header />
         <VolunteerComponent />
     </div>
   )

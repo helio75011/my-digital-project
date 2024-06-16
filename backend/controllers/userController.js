@@ -5,45 +5,70 @@ const nodemailer = require('nodemailer');
 
 exports.registerUser = (req, res) => {
     const { email, password } = req.body;
+    console.log('Registering user:', email);
 
-    const hashedPassword = bcrypt.hashSync(password, 10);
-
-    const query = 'INSERT INTO users (email, password) VALUES (?, ?)';
-    db.execute(query, [email, hashedPassword], (err, results) => {
+    // Vérifier si l'email existe déjà
+    const checkEmailQuery = 'SELECT * FROM users WHERE email = ?';
+    db.execute(checkEmailQuery, [email], (err, results) => {
         if (err) {
-            return res.status(500).json({ message: 'Erreur lors de l\'inscription' });
+            console.error('Database error:', err);
+            return res.status(500).json({ message: 'Erreur lors de la vérification de l\'email' });
         }
 
-        const userId = results.insertId;
-        const verificationCode = Math.floor(1000 + Math.random() * 9000).toString();
+        if (results.length > 0) {
+            // L'email existe déjà
+            console.log('Email already exists:', email);
+            return res.status(400).json({ message: 'Cet email est déjà utilisé' });
+        }
 
-        const codeQuery = 'INSERT INTO verification_codes (user_id, code) VALUES (?, ?)';
-        db.execute(codeQuery, [userId, verificationCode], (err) => {
+        // Hacher le mot de passe
+        const hashedPassword = bcrypt.hashSync(password, 10);
+        console.log('Hashed password:', hashedPassword);
+
+        // Insérer l'utilisateur dans la base de données
+        const query = 'INSERT INTO users (email, password) VALUES (?, ?)';
+        db.execute(query, [email, hashedPassword], (err, results) => {
             if (err) {
-                return res.status(500).json({ message: 'Erreur lors de la génération du code de vérification' });
+                console.error('Database error:', err);
+                return res.status(500).json({ message: 'Erreur lors de l\'inscription' });
             }
 
-            // Envoyer le code de vérification par email
-            const transporter = nodemailer.createTransport({
-                service: 'Gmail',
-                auth: {
-                    user: process.env.EMAIL_USER,
-                    pass: process.env.EMAIL_PASS,
-                },
-            });
+            const userId = results.insertId;
+            console.log('User ID:', userId);
 
-            const mailOptions = {
-                from: process.env.EMAIL_USER,
-                to: email,
-                subject: 'Code de vérification',
-                text: `Votre code de vérification est: ${verificationCode}`,
-            };
+            const verificationCode = Math.floor(1000 + Math.random() * 9000).toString();
+            console.log('Verification code:', verificationCode);
 
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    return res.status(500).json({ message: 'Erreur lors de l\'envoi du code de vérification' });
+            const codeQuery = 'INSERT INTO verification_codes (user_id, code) VALUES (?, ?)';
+            db.execute(codeQuery, [userId, verificationCode], (err) => {
+                if (err) {
+                    console.error('Database error:', err);
+                    return res.status(500).json({ message: 'Erreur lors de la génération du code de vérification' });
                 }
-                res.status(200).json({ message: 'Inscription réussie. Un code de vérification a été envoyé à votre email.' });
+
+                const transporter = nodemailer.createTransport({
+                    service: 'Gmail',
+                    auth: {
+                        user: process.env.EMAIL_USER,
+                        pass: process.env.EMAIL_PASS,
+                    },
+                });
+
+                const mailOptions = {
+                    from: process.env.EMAIL_USER,
+                    to: email,
+                    subject: 'Code de vérification',
+                    text: `Votre code de vérification est: ${verificationCode}`,
+                };
+
+                transporter.sendMail(mailOptions, (error, info) => {
+                    if (error) {
+                        console.error('Email error:', error);
+                        return res.status(500).json({ message: 'Erreur lors de l\'envoi du code de vérification' });
+                    }
+                    console.log('Email sent:', info.response);
+                    res.status(200).json({ message: 'Inscription réussie. Un code de vérification a été envoyé à votre email.' });
+                });
             });
         });
     });

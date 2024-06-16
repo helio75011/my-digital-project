@@ -6,6 +6,7 @@ const articleRoutes = require('./routes/articleRoutes');
 const eventRoutes = require('./routes/eventRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const protectedRoutes = require('./routes/protectedRoutes'); // Importer les routes protégées
+const userRoutes = require('./routes/userRoutes')
 const path = require('path');
 const cors = require('cors');
 
@@ -26,6 +27,7 @@ app.use(articleRoutes);
 app.use(eventRoutes);
 app.use(adminRoutes);
 app.use(protectedRoutes); // Utiliser les routes protégées
+app.use(userRoutes);
 
 // Démarrer le serveur
 app.listen(port, () => {

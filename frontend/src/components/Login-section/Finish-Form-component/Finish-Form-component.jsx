@@ -1,7 +1,7 @@
-// src/Finish-Form.jsx
 import React, { useState } from 'react';
 import './Finish-Form-component.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { apiFetch } from '../../../utils/api';
 
 const FinishFormComponent = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +14,9 @@ const FinishFormComponent = () => {
     acceptNotifications: false,
   });
 
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -24,8 +27,30 @@ const FinishFormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your submit logic here
-    console.log(formData);
+
+    if (formData.email !== formData.confirmEmail) {
+      setError('Les emails ne correspondent pas');
+      return;
+    }
+
+    apiFetch('http://localhost:3000/register', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: formData.email,
+        password: formData.password,
+      }),
+    })
+      .then(data => {
+        if (data.message) {
+          localStorage.setItem('email', formData.email); // Stocker l'email dans le localStorage
+          navigate('/email-verification'); // Rediriger vers la page de vérification
+        } else {
+          setError(data.message);
+        }
+      })
+      .catch(error => {
+        setError('Erreur lors de l\'inscription');
+      });
   };
 
   return (
@@ -125,8 +150,8 @@ const FinishFormComponent = () => {
               En créant votre compte, vous acceptez de recevoir des notifications par email.
             </label>
           </div>
-          {/* <button className="button-finish" type="submit">Continuer</button> */}
-          <Link className="button-finish" to='/email-verification'>Continuer</Link>
+          <button className="button-finish" type="submit">Continuer</button>
+          {error && <p>{error}</p>}
         </form>
       </div>
     </div>
