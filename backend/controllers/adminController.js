@@ -6,7 +6,7 @@ const db = require('../config/database'); // Assure-toi que ce chemin est correc
 exports.loginAdmin = (req, res) => {
     const { email, password } = req.body;
 
-    const query = 'SELECT * FROM user WHERE email = ?';
+    const query = 'SELECT * FROM admin WHERE email = ?';
     db.execute(query, [email], (err, results) => {
         if (err) {
             return res.status(500).json({ message: 'Erreur de serveur' });

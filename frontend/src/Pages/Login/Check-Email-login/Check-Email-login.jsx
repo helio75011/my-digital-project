@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../../components/Login-section/Header-login/Header-login'
+import Header from '../../../components/Section/Header/Header'
 import CheckEmailComponent from '../../../components/Login-section/Check-Email-component/Check-Email-component'
 
 const CheckEmailLogin = () => {
   return (
     <div>
-        <HeaderLogin />
+        <Header />
         <CheckEmailComponent />
     </div>
   )

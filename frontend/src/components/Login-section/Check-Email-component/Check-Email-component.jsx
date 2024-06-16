@@ -1,23 +1,37 @@
-// src/Check-Email-component.js
-import React, { useState } from 'react';
-import './Check-Email-component.css';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { apiFetch } from '../../../utils/api';
 
 const CheckEmailComponent = () => {
   const [verificationCode, setVerificationCode] = useState('');
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const handleCodeChange = (e) => {
-    setVerificationCode(e.target.value);
-  };
+  useEffect(() => {
+    const storedEmail = localStorage.getItem('email');
+    if (storedEmail) {
+      setEmail(storedEmail);
+    } else {
+      setError('Email non trouvé');
+    }
+  }, []);
 
   const handleValidate = () => {
-    // Logic to handle code validation
-    console.log('Verification code:', verificationCode);
-  };
-
-  const handleResendCode = () => {
-    // Logic to handle resending the code
-    console.log('Resend code');
+    apiFetch('http://localhost:3000/verify', {
+      method: 'POST',
+      body: JSON.stringify({ email, code: verificationCode }),
+    })
+      .then(data => {
+        if (data.message === 'Vérification réussie') {
+          navigate('/result-login');
+        } else {
+          setError(data.message);
+        }
+      })
+      .catch(error => {
+        setError('Erreur lors de la vérification');
+      });
   };
 
   return (
@@ -42,13 +56,13 @@ const CheckEmailComponent = () => {
           type="text"
           maxLength="4"
           value={verificationCode}
-          onChange={handleCodeChange}
+          onChange={(e) => setVerificationCode(e.target.value)}
         />
-        {/* <button className="button-validate" onClick={handleValidate}>
+        <button className="button-validate" onClick={handleValidate}>
           Valider
-        </button> */}
-        <Link className="button-validate" to='/result-login'>Valider</Link>
-        <button className="button-resend" onClick={handleResendCode}>
+        </button>
+        {error && <p>{error}</p>}
+        <button className="button-resend" onClick={() => console.log('Resend code')}>
           Renvoyer le code
         </button>
       </div>

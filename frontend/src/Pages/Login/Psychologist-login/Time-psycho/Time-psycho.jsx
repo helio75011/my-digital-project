@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../../../components/Login-section/Header-login/Header-login'
+import Header from '../../../../components/Section/Header/Header'
 import TimeComponent from '../../../../components/Login-section/Psychologist-component/Time-component/Time-component'
 
 const TimePsycho = () => {
   return (
     <div>
-        <HeaderLogin />
+        <Header />
         <TimeComponent />
     </div>
   )

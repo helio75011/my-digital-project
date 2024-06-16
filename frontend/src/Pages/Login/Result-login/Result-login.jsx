@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../../components/Login-section/Header-login/Header-login'
+import Header from '../../../components/Section/Header/Header'
 import ResultLoginComponent from '../../../components/Login-section/Result-login-component/Result-login-component'
 
 const ResultLogin = () => {
   return (
     <div>
-        <HeaderLogin />
+        <Header />
         <ResultLoginComponent />
     </div>
   )

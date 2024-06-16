@@ -1,11 +1,11 @@
 import React from 'react'
-import HeaderLogin from '../../../../components/Login-section/Header-login/Header-login'
+import Header from '../../../../components/Section/Header/Header'
 import WeekComponent from '../../../../components/Login-section/Psychologist-component/Week-component/Week-component'
 
 const WeekPsycho = () => {
   return (
     <div>
-        <HeaderLogin />
+        <Header />
         <WeekComponent />
     </div>
   )
