@@ -1,23 +1,26 @@
-// src/ThankYouModal.js
 import React from 'react';
 import ReactModal from 'react-modal';
 import './Thanks-modal-component.css';
 
-const ThanksModalComponent = ({ isOpen, onRequestClose }) => {
+const ThanksModalComponent = ({ isOpen, onRequestClose, formData }) => {
   return (
     <ReactModal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      overlayClassName="modal-overlay-thankyou"
-      className="modal-content-thankyou"
+      overlayClassName="modal-overlay"
+      className="modal-content"
     >
-      <h2>Merci!</h2>
-      <p className="thankyou-message">
-        Votre paiement a été confirmé avec succès, et vous avez désormais accès à toutes les fonctionnalités de notre service abonnement Premium. Nous espérons que notre service répondra à vos attentes et vous offrira le soutien dont vous avez besoin.
-      </p>
-      <button className="continue-button" onClick={onRequestClose}>Continuer</button>
+      <button className="close-button" onClick={onRequestClose}>&times;</button>
+      <h2>Merci pour votre paiement</h2>
+      <p>Nous avons bien reçu votre paiement et vos informations suivantes :</p>
+      <ul>
+        <li>Nom: {formData.lastName}</li>
+        <li>Prénom: {formData.firstName}</li>
+        <li>Email: {formData.email}</li>
+      </ul>
     </ReactModal>
   );
 };
 
 export default ThanksModalComponent;
+

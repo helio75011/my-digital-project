@@ -20,10 +20,10 @@ const Acceuil = () => {
         <div className='body-acceuil'>
           <Set />
           <Statistics />
-          <SocialCalendar />
           <WhoWeHelp />
           <Volunteer />
           <HowItWorks />
+          <SocialCalendar />
           <Articles />
           <PricingPlan />
           <Testimonials />

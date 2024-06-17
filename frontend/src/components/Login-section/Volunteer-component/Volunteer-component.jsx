@@ -29,7 +29,7 @@ const VolunteerComponent = () => {
   return (
     <div className="body-volunteer">
       <div className="container-volunteer">
-        <h1 className="title-volunteer">Demande de bénévolat</h1>
+        <h1 className="title-volunteer">Formulaire du bénévole</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group-inline-volunteer">
             <div className="form-group-volunteer">
@@ -39,6 +39,7 @@ const VolunteerComponent = () => {
                 type="text"
                 id="lastName-volunteer"
                 name="lastName"
+                placeholder="Metz"
                 value={formData.lastName}
                 onChange={handleChange}
                 required
@@ -51,6 +52,7 @@ const VolunteerComponent = () => {
                 type="text"
                 id="firstName-volunteer"
                 name="firstName"
+                placeholder="Carl"
                 value={formData.firstName}
                 onChange={handleChange}
                 required

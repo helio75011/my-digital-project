@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Check-Email-component.css'
 import { useNavigate } from 'react-router-dom';
 import { apiFetch } from '../../../utils/api';
 
@@ -6,6 +7,7 @@ const CheckEmailComponent = () => {
   const [verificationCode, setVerificationCode] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [newVerificationCode, setNewVerificationCode] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,6 +33,23 @@ const CheckEmailComponent = () => {
       })
       .catch(error => {
         setError('Erreur lors de la vérification');
+      });
+  };
+
+  const handleResendCode = () => {
+    apiFetch('http://localhost:3000/resend-code', {
+      method: 'POST',
+      body: JSON.stringify({ email }),
+    })
+      .then(data => {
+        if (data.message) {
+          setNewVerificationCode(data.code);
+        } else {
+          setError(data.message);
+        }
+      })
+      .catch(error => {
+        setError('Erreur lors de l\'envoi du nouveau code');
       });
   };
 
@@ -62,9 +81,12 @@ const CheckEmailComponent = () => {
           Valider
         </button>
         {error && <p>{error}</p>}
-        <button className="button-resend" onClick={() => console.log('Resend code')}>
+        <button className="button-resend" onClick={handleResendCode}>
           Renvoyer le code
         </button>
+        {newVerificationCode && (
+          <p className="new-verification-code">Nouveau code de vérification : {newVerificationCode}</p>
+        )}
       </div>
     </div>
   );

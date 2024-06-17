@@ -14,9 +14,10 @@
     padding: 20px;
   }
   
-  .title {
+  .title-role {
     font-size: 2rem;
     margin-bottom: 2rem;
+    font-family: 'RecoletaAltBold';
   }
   
   .card-container {
@@ -34,6 +35,8 @@
     width: 200px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    color: #000;
   }
   
   .card:hover {
@@ -43,5 +46,10 @@
   .card-title {
     font-size: 1.2rem;
     margin-top: 1rem;
+    font-family: KalamBold;
+  }
+
+  .card-para {
+    font-family: KalamBold;
   }
   

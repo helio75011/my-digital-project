@@ -34,6 +34,18 @@
     margin-bottom: 20px;
     width: 60%;
   }
+
+  .contactImage {
+    display: flex;
+  }
+
+  .hands {
+    width: 55%;
+  } 
+
+  .arrow {
+    width: 40%;
+  }
   
   .contactWarning {
     font-size: 0.8rem;

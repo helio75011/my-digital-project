@@ -15,7 +15,7 @@ const FAQ = () => {
     };
 
     return (
-        <div className="faq-section" id='faq'>
+        <div className="faq-section-home" id='faq'>
             <div className="faq-image">
                 <img src={FAQP} alt="Person" />
             </div>

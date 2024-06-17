@@ -18,6 +18,21 @@
   src: url('./fonts/ModernEra-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'KalamBold';
+  src: url('./fonts/Kalam-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KalamLight';
+  src: url('./fonts/Kalam-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KalamRegular';
+  src: url('./fonts/Kalam-Regular.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
 }

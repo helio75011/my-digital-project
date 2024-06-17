@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Finish-Form-component.css';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiFetch } from '../../../utils/api';
 
-const FinishFormComponent = () => {
-  const [formData, setFormData] = useState({
-    lastName: '',
-    firstName: '',
-    email: '',
-    confirmEmail: '',
-    password: '',
-    acceptPolicy: false,
-    acceptNotifications: false,
-  });
-
+const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVerificationCode }) => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -42,8 +33,10 @@ const FinishFormComponent = () => {
     })
       .then(data => {
         if (data.message) {
-          localStorage.setItem('email', formData.email); // Stocker l'email dans le localStorage
-          navigate('/email-verification'); // Rediriger vers la page de vérification
+          setVerificationCode(data.code);
+          localStorage.setItem('email', formData.email);
+          setIsFormSubmitted(true);
+          navigate('/email-verification');
         } else {
           setError(data.message);
         }

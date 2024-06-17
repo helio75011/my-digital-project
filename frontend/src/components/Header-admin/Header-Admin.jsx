@@ -1,6 +1,13 @@
 import React from 'react';
 import './Header-Admin.css'; // Assurez-vous de créer ce fichier CSS
 import { Link, useNavigate } from 'react-router-dom';
+import calendrier from './uploads/calendrier.png'
+import chat from './uploads/chat.png'
+import deconnexion from './uploads/deconnexion.png'
+import evenement from './uploads/evenement.png'
+import journal from './uploads/journal.png'
+import ressource from './uploads/ressource.png'
+import patient from './uploads/patient.png'
 
 function HeaderAdmin() {
   const navigate = useNavigate();
@@ -13,32 +20,32 @@ function HeaderAdmin() {
   return (
     <div className="sidebarAdmin">
       <div className="menuItem">
-        <span className="icon">&#x1F4CA;</span>
-        <Link className='title' to="/diary">Journal</Link>
+        <span className="icon"><img src={journal} /></span>
+        <Link className='title-header-admin' to="/diary">Journal</Link>
       </div>
       <div className="menuItem">
-        <span className="icon">&#x1F4AC;</span>
-        <Link className='title' to="/chat">Chat</Link>
+        <span className="icon"><img src={chat} /></span>
+        <Link className='title-header-admin' to="/chat">Chat</Link>
       </div>
       <div className="menuItem">
-        <span className="icon">&#x1F465;</span>
-        <Link className='title' to="/patients">Mes patients</Link>
+        <span className="icon"><img src={patient} /></span>
+        <Link className='title-header-admin' to="/patients">Mes patients</Link>
       </div>
       <div className="menuItem">
-        <span className="icon">&#x1F4C5;</span>
-        <Link className='title' to="/calendar">Calendrier</Link>
+        <span className="icon"><img src={calendrier} /></span>
+        <Link className='title-header-admin' to="/calendar">Calendrier</Link>
       </div>
       <div className="menuItem">
-        <span className="icon">&#x1F4E6;</span>
-        <Link className='title' to="/event">Événements</Link>
+        <span className="icon"><img src={evenement} /></span>
+        <Link className='title-header-admin' to="/event">Événements</Link>
       </div>
       <div className="menuItem">
-        <span className="icon">&#x1F4E6;</span>
-        <Link className='title' to="/resource">Ressources</Link>
+        <span className="icon"><img src={ressource} /></span>
+        <Link className='title-header-admin' to="/resource">Ressources</Link>
       </div>
       <div className="menuItem" onClick={handleLogout}>
-        <span className="icon">&#x1F512;</span>
-        <span className="title">Se déconnecter</span>
+        <span className="icon"><img src={deconnexion} /></span>
+        <span className="title-header-admin">Se déconnecter</span>
       </div>
     </div>
   );

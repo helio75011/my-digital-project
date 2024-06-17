@@ -16,7 +16,7 @@
   .menuItem {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -33,9 +33,12 @@
     margin-right: 10px;
   }
   
-  .title {
-    flex: 1;
+  .title-header-admin {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
     text-decoration: none;
     color: #000;
+    font-size: 20px;
   }
   

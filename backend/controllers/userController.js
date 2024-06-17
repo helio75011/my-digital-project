@@ -5,71 +5,28 @@ const nodemailer = require('nodemailer');
 
 exports.registerUser = (req, res) => {
     const { email, password } = req.body;
-    console.log('Registering user:', email);
 
-    // Vérifier si l'email existe déjà
-    const checkEmailQuery = 'SELECT * FROM users WHERE email = ?';
-    db.execute(checkEmailQuery, [email], (err, results) => {
+    const hashedPassword = bcrypt.hashSync(password, 10);
+
+    const query = 'INSERT INTO users (email, password) VALUES (?, ?)';
+    db.execute(query, [email, hashedPassword], (err, results) => {
         if (err) {
-            console.error('Database error:', err);
-            return res.status(500).json({ message: 'Erreur lors de la vérification de l\'email' });
+            return res.status(500).json({ message: 'Registration error' });
         }
 
-        if (results.length > 0) {
-            // L'email existe déjà
-            console.log('Email already exists:', email);
-            return res.status(400).json({ message: 'Cet email est déjà utilisé' });
-        }
+        const userId = results.insertId;
 
-        // Hacher le mot de passe
-        const hashedPassword = bcrypt.hashSync(password, 10);
-        console.log('Hashed password:', hashedPassword);
+        const token = jwt.sign({ id: userId, email: email }, process.env.JWT_SECRET, {
+            expiresIn: '1h',
+        }).slice(0, 4);
 
-        // Insérer l'utilisateur dans la base de données
-        const query = 'INSERT INTO users (email, password) VALUES (?, ?)';
-        db.execute(query, [email, hashedPassword], (err, results) => {
+        const codeQuery = 'INSERT INTO verification_codes (user_id, code) VALUES (?, ?)';
+        db.execute(codeQuery, [userId, token], (err) => {
             if (err) {
-                console.error('Database error:', err);
-                return res.status(500).json({ message: 'Erreur lors de l\'inscription' });
+                return res.status(500).json({ message: 'Verification code error' });
             }
 
-            const userId = results.insertId;
-            console.log('User ID:', userId);
-
-            const verificationCode = Math.floor(1000 + Math.random() * 9000).toString();
-            console.log('Verification code:', verificationCode);
-
-            const codeQuery = 'INSERT INTO verification_codes (user_id, code) VALUES (?, ?)';
-            db.execute(codeQuery, [userId, verificationCode], (err) => {
-                if (err) {
-                    console.error('Database error:', err);
-                    return res.status(500).json({ message: 'Erreur lors de la génération du code de vérification' });
-                }
-
-                const transporter = nodemailer.createTransport({
-                    service: 'Gmail',
-                    auth: {
-                        user: process.env.EMAIL_USER,
-                        pass: process.env.EMAIL_PASS,
-                    },
-                });
-
-                const mailOptions = {
-                    from: process.env.EMAIL_USER,
-                    to: email,
-                    subject: 'Code de vérification',
-                    text: `Votre code de vérification est: ${verificationCode}`,
-                };
-
-                transporter.sendMail(mailOptions, (error, info) => {
-                    if (error) {
-                        console.error('Email error:', error);
-                        return res.status(500).json({ message: 'Erreur lors de l\'envoi du code de vérification' });
-                    }
-                    console.log('Email sent:', info.response);
-                    res.status(200).json({ message: 'Inscription réussie. Un code de vérification a été envoyé à votre email.' });
-                });
-            });
+            res.status(200).json({ message: 'Registration successful', code: token });
         });
     });
 };
@@ -126,6 +83,33 @@ exports.loginUser = (req, res) => {
             });
 
             res.status(200).json({ token });
+        });
+    });
+};
+
+exports.resendCode = (req, res) => {
+    const { email } = req.body;
+
+    const query = 'SELECT id FROM users WHERE email = ?';
+    db.execute(query, [email], (err, results) => {
+        if (err || results.length === 0) {
+            return res.status(400).json({ message: 'Email incorrect' });
+        }
+
+        const userId = results[0].id;
+
+        // Generate a new JWT token and shorten it to 4 characters
+        const newToken = jwt.sign({ id: userId, email: email }, process.env.JWT_SECRET, {
+            expiresIn: '1h',
+        }).slice(0, 4);
+
+        const codeQuery = 'UPDATE verification_codes SET code = ? WHERE user_id = ?';
+        db.execute(codeQuery, [newToken, userId], (err) => {
+            if (err) {
+                return res.status(500).json({ message: 'Erreur lors de la génération du code de vérification' });
+            }
+
+            res.status(200).json({ message: 'Nouveau code de vérification envoyé', code: newToken });
         });
     });
 };

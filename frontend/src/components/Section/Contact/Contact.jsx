@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import Talk from './uploads/talk.png'
+import hands from './uploads/hands.png'
+import arrow from './uploads/arrow.png'
 
 const Contact = () => {
   return (
@@ -11,6 +13,10 @@ const Contact = () => {
           <p className="contactDescription">
             Vous avez des questions, des suggestions ou simplement envie de nous faire part de votre expérience ? N'hésitez pas à nous contacter !
           </p>
+          <div className='contactImage'>
+            <img className='hands' src={hands} />
+            <img className='arrow' src={arrow} />
+          </div>
         </div>
         <div className="contactFormWrapper">
           <div className="contactForm">
