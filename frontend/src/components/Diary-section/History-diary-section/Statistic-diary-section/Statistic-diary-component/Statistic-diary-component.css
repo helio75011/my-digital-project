@@ -12,8 +12,15 @@
 
 .mood-stats {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin-bottom: 20px;
+    width: 50%;
+}
+
+.mood-parents {
+    width: 100%;
+    display: flex;
 }
 
 .mood-bar {
@@ -22,33 +29,39 @@
 }
 
 .happy {
-    height: 100px;
-    background-color: #ffdd57;
+    width: 100px;
+    height: 10px;
+    background-color: #ff6f61;
 }
 
 .satisfied {
-    height: 80px;
-    background-color: #76c7c0;
+    width: 80px;
+    height: 10px;
+    background-color: #ffdd57;
 }
 
 .neutral {
-    height: 40px;
-    background-color: #ccc;
-}
-
-.sad {
-    height: 40px;
+    width: 60px;
+    height: 10px;
     background-color: #769fcd;
 }
 
+.sad {
+    width: 40px;
+    height: 10px;
+    background-color: #76c7c0;
+}
+
 .distressed {
-    height: 30px;
-    background-color: #ff6f61;
+    width: 30px;
+    height: 10px;
+    background-color: #ccc;
 }
 
 .mood-legend {
     text-align: left;
     margin-bottom: 20px;
+    width: 50%;
 }
 
 .mood-legend p {
@@ -67,7 +80,7 @@
     border-radius: 50%;
 }
 
-.happy-circle {
+/* .happy-circle {
     background-color: #ffdd57;
 }
 
@@ -85,6 +98,16 @@
 
 .distressed-circle {
     background-color: #ff6f61;
+} */
+
+.mood-legend-flex {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.mood-legend-flex img {
+    margin-right: 10px;
 }
 
 h2 {

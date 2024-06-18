@@ -14,20 +14,22 @@ const GridEventComponent = () => {
     }, []);
 
     return (
-        <div className="events-grid">
-            {events.map(event => (
-                <Link to="/page-event" key={event.id}>
-                    <div className="event-card">
-                        <img className="event-image" src={event.image || 'https://via.placeholder.com/150'} alt={event.title} />
-                        <div className="event-details">
-                            <div className="event-date">{event.date}</div>
-                            <h2 className="event-title">{event.title}</h2>
-                            <p className="event-description">{event.description}</p>
-                            <div className="event-location">{event.location}</div>
+        <div>
+            <div className="events-grid">
+                {events.map(event => (
+                    <Link to="/page-event" key={event.id}>
+                        <div className="event-card">
+                            <img className="event-image" src={event.image || 'https://via.placeholder.com/150'} alt={event.title} />
+                            <div className="event-details">
+                                <div className="event-date">{event.date}</div>
+                                <h2 className="event-title">{event.title}</h2>
+                                <p className="event-description">{event.description}</p>
+                                <div className="event-location">{event.location}</div>
+                            </div>
                         </div>
-                    </div>
-                </Link>
-            ))}
+                    </Link>
+                ))}
+            </div>
             <button className="load-more">Voir plus</button>
         </div>
     );

@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import './Header-login.css'; // Only if you're using a separate CSS file
 import Logo from './uploads/Logo.png'
+import cloche from './uploads/cloche.png'
+import interro from './uploads/interro.png'
 import { Link } from 'react-router-dom';
 
 const HeaderLogin = () => {
@@ -18,7 +20,7 @@ const HeaderLogin = () => {
             </Link>
             <div className="icons">
                 <div className="icon" onClick={() => setShowNotifications(!showNotifications)}>
-                    🔔
+                    <img src={cloche} />
                     {showNotifications && (
                         <div className="dropdown notifications">
                             <div className="dropdown-header">
@@ -41,7 +43,7 @@ const HeaderLogin = () => {
                     )}
                 </div>
                 <div className="icon" onClick={() => setShowHelp(!showHelp)}>
-                    ❓
+                    <img src={interro} />
                     {showHelp && (
                         <div className="dropdown help">
                             <div className="dropdown-body">

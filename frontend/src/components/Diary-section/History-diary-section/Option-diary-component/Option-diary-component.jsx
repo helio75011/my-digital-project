@@ -27,8 +27,8 @@ const OptionDiaryComponent = () => {
                 <Link to='/statistic'><button className="button selected">Statistique</button></Link>
                 <Link to='/note'><button className="button">Mes notes</button></Link>
             </div>
-            <div className="date-navigation">
-                <span className="date">{`${month}, ${year}`}</span>
+            <div className="date-navigation-option">
+                <span className="date-option">{`${month}, ${year}`}</span>
                 <div className="nav-buttons">
                     <button onClick={handlePrevMonth}>←</button>
                     <button onClick={handleNextMonth}>→</button>

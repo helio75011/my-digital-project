@@ -1,7 +1,9 @@
+// ParentComponent.jsx
 import React, { useState } from 'react';
 import FinishFormComponent from './components/Login-section/Finish-Form-component/Finish-Form-component';
-import ResultLoginComponent from './components/Login-section/Result-login-component/Result-login-component'
+import ResultLoginComponent from './components/Login-section/Result-login-component/Result-login-component';
 import PaymentModalComponent from './components/Login-section/Payment-modal-component/Payment-modal-component';
+import ThanksModalComponent from './components/Login-section/Thanks-modal-component/Thanks-modal-component';
 
 const ParentComponent = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +20,14 @@ const ParentComponent = () => {
   const [verificationCode, setVerificationCode] = useState('');
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [isThankYouModalOpen, setIsThankYouModalOpen] = useState(false);
+
+  console.log('ParentComponent state:', {
+    formData,
+    isFormSubmitted,
+    verificationCode,
+    isPaymentModalOpen,
+    isThankYouModalOpen,
+  });
 
   return (
     <>

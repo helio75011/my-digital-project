@@ -4,14 +4,19 @@ const db = require('../config/database');
 const nodemailer = require('nodemailer');
 
 exports.registerUser = (req, res) => {
-    const { email, password } = req.body;
+    const { email, password, lastName, firstName, acceptPolicy, acceptNotifications } = req.body;
+
+    if (!email || !password || !lastName || !firstName) {
+        return res.status(400).json({ message: 'Veuillez remplir tous les champs obligatoires.' });
+    }
 
     const hashedPassword = bcrypt.hashSync(password, 10);
 
-    const query = 'INSERT INTO users (email, password) VALUES (?, ?)';
-    db.execute(query, [email, hashedPassword], (err, results) => {
+    const query = 'INSERT INTO users (email, password, lastName, firstName, acceptPolicy, acceptNotifications) VALUES (?, ?, ?, ?, ?, ?)';
+    db.execute(query, [email, hashedPassword, lastName, firstName, acceptPolicy, acceptNotifications], (err, results) => {
         if (err) {
-            return res.status(500).json({ message: 'Registration error' });
+            console.error('Database error:', err);
+            return res.status(500).json({ message: 'Erreur lors de l\'inscription.' });
         }
 
         const userId = results.insertId;
@@ -23,10 +28,11 @@ exports.registerUser = (req, res) => {
         const codeQuery = 'INSERT INTO verification_codes (user_id, code) VALUES (?, ?)';
         db.execute(codeQuery, [userId, token], (err) => {
             if (err) {
-                return res.status(500).json({ message: 'Verification code error' });
+                console.error('Database error:', err);
+                return res.status(500).json({ message: 'Erreur lors de la création du code de vérification.' });
             }
 
-            res.status(200).json({ message: 'Registration successful', code: token });
+            res.status(200).json({ message: 'Inscription réussie.', code: token });
         });
     });
 };

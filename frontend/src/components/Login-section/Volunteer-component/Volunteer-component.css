@@ -21,6 +21,7 @@
   .title-volunteer {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    font-family: 'RecoletaAltBold';
   }
   
   .form-group-inline-volunteer {
@@ -39,7 +40,8 @@
   
   .label-volunteer {
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'RecoletaAltBold';
   }
   
   .input-volunteer {

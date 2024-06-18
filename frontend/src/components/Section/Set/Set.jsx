@@ -2,6 +2,7 @@
 import React from 'react';
 import './Set.css';
 import WC from './uploads/women-computer.png'
+import { Link } from 'react-router-dom';
 
 const Set = () => {
     return (
@@ -16,8 +17,8 @@ const Set = () => {
                     isolement.
                 </p>
                 <div className="promo-buttons">
-                    <button className="start-button">Commencer</button>
-                    <button className="learn-more-button">Savoir plus</button>
+                    <Link to='/register' ><button className="start-button">Commencer</button></Link>
+                    {/* <button className="learn-more-button">Savoir plus</button> */}
                 </div>
             </div>
             <div className="promo-image">

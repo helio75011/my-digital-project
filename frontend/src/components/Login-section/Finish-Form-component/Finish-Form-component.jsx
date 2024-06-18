@@ -1,19 +1,27 @@
-import React from 'react';
-import './Finish-Form-component.css';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Finish-Form-component.css';
 import { apiFetch } from '../../../utils/api';
 
-const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVerificationCode }) => {
+const FinishFormComponent = (props) => {
+  const { formData, setFormData, setIsFormSubmitted, setVerificationCode } = props;
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  useEffect(() => {
+    console.log('FinishFormComponent props:', props);
+  }, [props]);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value,
-    });
+    if (typeof setFormData === 'function') {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: type === 'checkbox' ? checked : value,
+      }));
+    } else {
+      console.error('setFormData is not a function');
+    }
   };
 
   const handleSubmit = (e) => {
@@ -26,24 +34,31 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
 
     apiFetch('http://localhost:3000/register', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         email: formData.email,
         password: formData.password,
+        lastName: formData.lastName,
+        firstName: formData.firstName,
+        acceptPolicy: formData.acceptPolicy,
+        acceptNotifications: formData.acceptNotifications,
       }),
     })
-      .then(data => {
-        if (data.message) {
-          setVerificationCode(data.code);
-          localStorage.setItem('email', formData.email);
-          setIsFormSubmitted(true);
-          navigate('/email-verification');
-        } else {
-          setError(data.message);
-        }
-      })
-      .catch(error => {
-        setError('Erreur lors de l\'inscription');
-      });
+    .then(data => {
+      if (data.message) {
+        setVerificationCode(data.code);
+        localStorage.setItem('email', formData.email);
+        setIsFormSubmitted(true);
+        navigate('/email-verification');
+      } else {
+        setError(data.message);
+      }
+    })
+    .catch(() => {
+      setError('Erreur lors de l\'inscription');
+    });
   };
 
   return (
@@ -65,7 +80,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="text"
               id="lastName"
               name="lastName"
-              value={formData.lastName}
+              value={formData?.lastName || ''}
               onChange={handleChange}
               required
             />
@@ -77,7 +92,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="text"
               id="firstName"
               name="firstName"
-              value={formData.firstName}
+              value={formData?.firstName || ''}
               onChange={handleChange}
               required
             />
@@ -89,7 +104,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="email"
               id="email"
               name="email"
-              value={formData.email}
+              value={formData?.email || ''}
               onChange={handleChange}
               required
             />
@@ -101,7 +116,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="email"
               id="confirmEmail"
               name="confirmEmail"
-              value={formData.confirmEmail}
+              value={formData?.confirmEmail || ''}
               onChange={handleChange}
               required
             />
@@ -113,7 +128,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="password"
               id="password"
               name="password"
-              value={formData.password}
+              value={formData?.password || ''}
               onChange={handleChange}
               required
             />
@@ -123,7 +138,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="checkbox"
               id="acceptPolicy"
               name="acceptPolicy"
-              checked={formData.acceptPolicy}
+              checked={formData?.acceptPolicy || false}
               onChange={handleChange}
               required
             />
@@ -136,7 +151,7 @@ const FinishFormComponent = ({ formData, setFormData, setIsFormSubmitted, setVer
               type="checkbox"
               id="acceptNotifications"
               name="acceptNotifications"
-              checked={formData.acceptNotifications}
+              checked={formData?.acceptNotifications || false}
               onChange={handleChange}
             />
             <label htmlFor="acceptNotifications">

@@ -67,12 +67,14 @@
 
   .detailP img {
     height: 100%;
+    margin-right: 10px;
   }
   
   .planPrice {
     font-size: 2rem;
-    color: #e8554e;
-    font-weight: bold;
+    /* color: #e8554e;
+    font-weight: bold; */
+    font-family: 'KalamBold';
     display: flex;
     justify-content: center;
   }

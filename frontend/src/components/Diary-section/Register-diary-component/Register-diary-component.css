@@ -58,6 +58,10 @@
     display: flex;
   }
 
+  .eventTitle-parent h1 {
+    font-family: 'RecoletaAltBold';
+  }
+
   .eventTitle-parent a {
     display: flex;
     align-items: center;

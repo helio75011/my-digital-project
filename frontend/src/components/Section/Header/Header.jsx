@@ -10,7 +10,7 @@ const Header = () => {
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
-    <header className="header">
+    <header className="header-acceuil">
       <nav className="navbar">
         <a href="/" className="nav-logo">
           <img src={Logo} alt="Logo"/>

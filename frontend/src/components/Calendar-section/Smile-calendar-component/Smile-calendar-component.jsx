@@ -37,7 +37,7 @@ const SmileCalendarComponent = () => {
 
     return (
         <div className="mini-calendar">
-            <div className="calendar-header">
+            <div className="calendar-header-smile">
                 <span className="month-year">{currentDate.toLocaleString('default', { month: 'long' })}, {year}</span>
                 <div className="navigation">
                     <button onClick={handlePrevMonth}>&#8592;</button>

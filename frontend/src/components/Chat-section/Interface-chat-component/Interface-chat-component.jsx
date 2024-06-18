@@ -19,12 +19,12 @@ const InterfaceChatComponent = () => {
                     <img className="avatar" src="https://via.placeholder.com/40" alt="Dr. Metz" />
                     <span className="chat-name">Dr. Metz</span>
                 </div>
-                <div className="header-right">
+                {/* <div className="header-right">
                     <FaPhone className="icon" />
                     <FaVideo className="icon" />
                     <FaSearch className="icon" />
                     <FaEllipsisV className="icon" />
-                </div>
+                </div> */}
             </div>
             <div className="chat-body">
                 {messages.map(message => (

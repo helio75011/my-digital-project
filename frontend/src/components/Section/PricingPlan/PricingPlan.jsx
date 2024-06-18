@@ -15,7 +15,7 @@ const PricingPlan = () => {
           <div className="planHeader">
             <h3>Plan de base</h3>
             <h4>soutien suplémentaire</h4>
-            <span className="planPrice">€5/mois</span>
+            <span className="planPrice">€11/mois</span>
           </div>
           <div className="planDetails">
             <h3>Inclus :</h3>
@@ -35,7 +35,7 @@ const PricingPlan = () => {
           <div className="planHeader">
             <h3>Plan premium</h3>
             <h4>soutien complet</h4>
-            <span className="planPrice">€15/mois</span>
+            <span className="planPrice">€17,99/mois</span>
           </div>
           <div className="planDetails">
             <h3>Inclus :</h3>

@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+.recommended-articles h1 {
+    font-family: 'RecoletaAltBold';
+}
+
 h1 {
     font-size: 24px;
     font-weight: bold;

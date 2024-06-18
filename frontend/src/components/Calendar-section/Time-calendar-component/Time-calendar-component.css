@@ -7,11 +7,24 @@
     margin: 0 auto;
 }
 
-.calendar-header, .calendar-row {
+.calendar-header-calendar, .calendar-row {
     display: flex;
 }
 
-.time-header, .time-cell {
+.calendar-header-calendar {
+    background-color: #FFE5E0;
+}
+
+.time-header {
+    width: 80px;
+    padding: 10px;
+    text-align: right;
+    /* background-color: #f8f9fa; */
+    border: 1px solid #ddd;
+    background-color: #FFE5E0; 
+}
+
+.time-cell {
     width: 80px;
     padding: 10px;
     text-align: right;
@@ -19,7 +32,15 @@
     border: 1px solid #ddd;
 }
 
-.day-header, .day-cell {
+.day-header-right-calendar {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #ddd; */
+    position: relative;
+}
+
+.day-cell-right-calendar {
     flex: 1;
     padding: 10px;
     text-align: center;

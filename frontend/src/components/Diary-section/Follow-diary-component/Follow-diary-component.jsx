@@ -2,6 +2,11 @@
 import React, { useState } from 'react';
 import './Follow-diary-component.css';
 import { Link } from 'react-router-dom';
+// import cool from './uploads/cool.png'
+// import crying from './uploads/crying.png'
+// import laughing from './uploads/laughing.png'
+// import pokerface from './uploads/pokerface.png'
+// import surprised from './uploads/surprised.png'
 
 const moods = [
     { icon: '😐', label: 'Ennui' },

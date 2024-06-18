@@ -47,6 +47,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    /* margin-right: 20px; */
+  }
+
+  .howItWorksStep img {
+    /* display: flex;
+    align-items: center;
+    gap: 10px; */
+    margin-right: 30px;
   }
   
   .stepNumber {

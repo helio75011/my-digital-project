@@ -38,6 +38,10 @@
     text-decoration: none;
     color: #000;
   }
+
+  .card img {
+    margin: 20px 0px;
+  }
   
   .card:hover {
     transform: scale(1.05);

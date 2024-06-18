@@ -1,13 +1,17 @@
 /* Header.css */
-.header {
+.header-acceuil {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #F8F4F2; /* Assuming a white background */
+    /* background: #fff; Assuming a white background */
     /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); For a subtle shadow */
   }
   
+  .sidebar-mobile a {
+    font-family: 'Lato-Bold';
+  }
+
   .navbar {
     width: 100%;
     display: flex;

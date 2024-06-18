@@ -33,6 +33,11 @@
   src: url('./fonts/Kalam-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'LatoBold';
+  src: url('./fonts/Lato-Bold.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
 }

@@ -12,16 +12,16 @@ const events = [
 const TimeCalendarComponent = () => {
     return (
         <div className="calendar">
-            <div className="calendar-header">
+            <div className="calendar-header-calendar">
                 <div className="time-header">Time</div>
                 {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, index) => (
-                    <div className="day-header" key={index}>{day}</div>
+                    <div className="day-header-right-calendar" key={index}>{day}</div>
                 ))}
             </div>
             <div className="calendar-body">
                 {[...Array(5)].map((_, rowIndex) => (
                     <div className="calendar-row" key={rowIndex}>
-                        <div className="time-cell">09:20 AM</div>
+                        <div className="time-cell-right-calendar">09:20 AM</div>
                         {[...Array(7)].map((_, colIndex) => {
                             const currentDay = colIndex + rowIndex * 7;
                             const event = events.find(e => e.day === currentDay + 1);
