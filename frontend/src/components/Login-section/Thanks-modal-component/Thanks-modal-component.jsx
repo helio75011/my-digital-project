@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactModal from 'react-modal';
+import axios from 'axios';
 import './Thanks-modal-component.css';
 
-const ThanksModalComponent = ({ isOpen, onRequestClose, formData }) => {
+const ThanksModalComponent = ({ isOpen, onRequestClose, email }) => {
+  const [formData, setFormData] = useState(null);
+
+  useEffect(() => {
+    if (email && isOpen) {
+      axios.post('/get-user-info', { email })
+        .then(response => {
+          setFormData(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching user info:', error);
+        });
+    }
+  }, [email, isOpen]);
+
+  if (!formData) {
+    return null; // Ou un indicateur de chargement
+  }
+
   return (
     <ReactModal
       isOpen={isOpen}
@@ -23,4 +42,3 @@ const ThanksModalComponent = ({ isOpen, onRequestClose, formData }) => {
 };
 
 export default ThanksModalComponent;
-

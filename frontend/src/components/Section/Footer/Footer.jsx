@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
 
-const Footer = ({ isModalOpen, openModal, closeModal }) => {
+const Footer = ({ isCGVModalOpen, openCGVModal, closeCGVModal, isMentionsModalOpen, openMentionsModal, closeMentionsModal }) => {
   return (
     <footer className="footerContainer">
       <div className="footerContent">
@@ -33,8 +33,8 @@ const Footer = ({ isModalOpen, openModal, closeModal }) => {
           <h4>Termes</h4>
           <a href="#">Données personnelles</a>
           <a href="#">Modération des avis</a>
-          <a href="#">Mentions Légales</a>
-          <a href="#" onClick={openModal}>CGV</a>
+          <a href="#" onClick={openMentionsModal}>Mentions Légales</a>
+          <a href="#" onClick={openCGVModal}>CGV</a>
         </div>
         <div className="socialMediaSection">
           <h4>Restez connecté</h4>
@@ -47,8 +47,8 @@ const Footer = ({ isModalOpen, openModal, closeModal }) => {
       </div>
       
       <Modal
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
+        isOpen={isCGVModalOpen}
+        onRequestClose={closeCGVModal}
         contentLabel="CGV Modal"
       >
         <h2>Conditions Générales de Vente</h2>
@@ -75,7 +75,45 @@ const Footer = ({ isModalOpen, openModal, closeModal }) => {
         <p>En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. Les présentes CGV sont soumises à la loi française.</p>
         <h3>Contact</h3>
         <p>Pour toute question ou réclamation, veuillez nous contacter à support@soutienplus.ovh.</p>
-        <button onClick={closeModal}>Close</button>
+        <button onClick={closeCGVModal}>Close</button>
+      </Modal>
+
+      <Modal
+        isOpen={isMentionsModalOpen}
+        onRequestClose={closeMentionsModal}
+        contentLabel="Mentions Légales Modal"
+      >
+        <h2>Mentions Légales</h2>
+        <h3>Éditeur du site</h3>
+        <p><strong>Soutien Plus</strong><br />
+        Adresse : [Adresse de l'entreprise]<br />
+        Téléphone : [Numéro de téléphone]<br />
+        Email : contact@soutienplus.ovh<br />
+        Numéro SIRET : [Numéro SIRET]</p>
+        
+        <h3>Hébergement</h3>
+        <p><strong>Hébergeur</strong><br />
+        Nom de l'hébergeur : [Nom de l'hébergeur]<br />
+        Adresse : [Adresse de l'hébergeur]<br />
+        Téléphone : [Numéro de téléphone de l'hébergeur]<br />
+        Email : [Email de l'hébergeur]</p>
+        
+        <h3>Propriété intellectuelle</h3>
+        <p>Tous les contenus présents sur ce site sont la propriété exclusive de Soutien Plus, sauf mention contraire. Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces contenus, même partielle, est strictement interdite sans l'accord écrit de Soutien Plus.</p>
+        
+        <h3>Données personnelles</h3>
+        <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, veuillez nous contacter à l’adresse suivante : dpo@soutienplus.ovh.</p>
+        
+        <h3>Responsabilité</h3>
+        <p>Soutien Plus s’efforce d’assurer au mieux de ses possibilités, l’exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, l’éditeur décline toute responsabilité pour toute inexactitude, omission ou modification des informations disponibles sur ce site.</p>
+        
+        <h3>Liens hypertextes</h3>
+        <p>Le site peut contenir des liens hypertextes vers d’autres sites. Soutien Plus n’exerce aucun contrôle sur ces sites et ne peut être tenu responsable de leur contenu.</p>
+        
+        <h3>Cookies</h3>
+        <p>Le site Soutien Plus peut être amené à utiliser des cookies pour améliorer l’expérience de l’utilisateur et réaliser des statistiques de visites. Vous pouvez désactiver les cookies en modifiant les paramètres de votre navigateur.</p>
+        
+        <button onClick={closeMentionsModal}>Close</button>
       </Modal>
     </footer>
   );
