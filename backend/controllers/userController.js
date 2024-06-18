@@ -119,3 +119,22 @@ exports.resendCode = (req, res) => {
         });
     });
 };
+
+
+exports.getUserInfo = (req, res) => {
+    const { email } = req.body;
+
+    if (!email) {
+        return res.status(400).json({ message: 'Email est requis.' });
+    }
+
+    const query = 'SELECT email, lastName, firstName FROM users WHERE email = ?';
+    db.execute(query, [email], (err, results) => {
+        if (err || results.length === 0) {
+            return res.status(404).json({ message: 'Utilisateur non trouvé.' });
+        }
+
+        const user = results[0];
+        res.status(200).json(user);
+    });
+};

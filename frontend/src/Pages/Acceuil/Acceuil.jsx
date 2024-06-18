@@ -15,14 +15,23 @@ import Contact from '../../components/Section/Contact/Contact';
 import Footer from '../../components/Section/Footer/Footer';
 
 const Acceuil = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCGVModalOpen, setIsCGVModalOpen] = useState(false);
+  const [isMentionsModalOpen, setIsMentionsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  const openCGVModal = () => {
+    setIsCGVModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeCGVModal = () => {
+    setIsCGVModalOpen(false);
+  };
+
+  const openMentionsModal = () => {
+    setIsMentionsModalOpen(true);
+  };
+
+  const closeMentionsModal = () => {
+    setIsMentionsModalOpen(false);
   };
 
   return (
@@ -41,9 +50,12 @@ const Acceuil = () => {
         <FAQ />
         <Contact />
         <Footer 
-          isModalOpen={isModalOpen}
-          openModal={openModal}
-          closeModal={closeModal}
+          isCGVModalOpen={isCGVModalOpen}
+          openCGVModal={openCGVModal}
+          closeCGVModal={closeCGVModal}
+          isMentionsModalOpen={isMentionsModalOpen}
+          openMentionsModal={openMentionsModal}
+          closeMentionsModal={closeMentionsModal}
         />
       </div>
     </div>
