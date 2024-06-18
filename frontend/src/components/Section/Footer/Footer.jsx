@@ -84,34 +84,21 @@ const Footer = ({ isCGVModalOpen, openCGVModal, closeCGVModal, isMentionsModalOp
         contentLabel="Mentions Légales Modal"
       >
         <h2>Mentions Légales</h2>
-        <h3>Éditeur du site</h3>
-        <p><strong>Soutien Plus</strong><br />
-        Adresse : [Adresse de l'entreprise]<br />
-        Téléphone : [Numéro de téléphone]<br />
-        Email : contact@soutienplus.ovh<br />
-        Numéro SIRET : [Numéro SIRET]</p>
+        <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site SoutienPlus l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+        <h3>Edition du site</h3>
+        <p>Le présent site, accessible à l’URL https://www.soutienplus.ovh/, est édité par :<br/>
+          SoutienPlus, société au capital de 2 euros, inscrite au R.C.S. de PARIS sous le numéro ########, dont le siège social est situé au 40 rue du Chemin Vert 75011, représenté(e) par Lydie PEYREFORT dûment habilité(e)</p>
         
         <h3>Hébergement</h3>
-        <p><strong>Hébergeur</strong><br />
-        Nom de l'hébergeur : [Nom de l'hébergeur]<br />
-        Adresse : [Adresse de l'hébergeur]<br />
-        Téléphone : [Numéro de téléphone de l'hébergeur]<br />
-        Email : [Email de l'hébergeur]</p>
+        <p>Le Site est hébergé par la société OVH SAS, situé 2 rue Kellermann - BP 80157 - 59053 Roubaix Cedex 1, (contact téléphonique ou email : 1007).</p>
         
-        <h3>Propriété intellectuelle</h3>
-        <p>Tous les contenus présents sur ce site sont la propriété exclusive de Soutien Plus, sauf mention contraire. Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces contenus, même partielle, est strictement interdite sans l'accord écrit de Soutien Plus.</p>
+        <h3>Directeur de publication</h3>
+        <p>Le Directeur de la publication du Site est Helio DE BREYNE.</p>
         
-        <h3>Données personnelles</h3>
-        <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, veuillez nous contacter à l’adresse suivante : dpo@soutienplus.ovh.</p>
-        
-        <h3>Responsabilité</h3>
-        <p>Soutien Plus s’efforce d’assurer au mieux de ses possibilités, l’exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, l’éditeur décline toute responsabilité pour toute inexactitude, omission ou modification des informations disponibles sur ce site.</p>
-        
-        <h3>Liens hypertextes</h3>
-        <p>Le site peut contenir des liens hypertextes vers d’autres sites. Soutien Plus n’exerce aucun contrôle sur ces sites et ne peut être tenu responsable de leur contenu.</p>
-        
-        <h3>Cookies</h3>
-        <p>Le site Soutien Plus peut être amené à utiliser des cookies pour améliorer l’expérience de l’utilisateur et réaliser des statistiques de visites. Vous pouvez désactiver les cookies en modifiant les paramètres de votre navigateur.</p>
+        <h3>Nous contacter</h3>
+        <p>Par téléphone : +33615854462<br/>
+        Par email : soutienplus@gmail.com<br/>
+        Par courrier : 40 rue du Chemin Vert 75011 Paris</p>
         
         <button onClick={closeMentionsModal}>Close</button>
       </Modal>
